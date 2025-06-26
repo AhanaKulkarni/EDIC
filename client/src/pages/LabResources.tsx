@@ -32,7 +32,7 @@ const labData: Lab[] = [
     name: "Chemistry Laboratory",
     floor: "Ground Floor",
     building: "",
-    department: "Applied Sciences",
+    department: "",
     equipment: [
       {
         id: "chem-1",
@@ -89,8 +89,8 @@ const labData: Lab[] = [
     id: "physics-lab-1",
     name: "Physics Laboratory",
     floor: "First Floor",
-    building: "Main Building",
-    department: "Applied Sciences",
+    building: "",
+    department: "",
     equipment: [
       {
         id: "phy-1",
@@ -133,8 +133,8 @@ const labData: Lab[] = [
     id: "comp-lab-1",
     name: "LAB 216",
     floor: "Second Floor",
-    building: "IT Building",
-    department: "Computer Engineering",
+    building: "",
+    department: "",
     equipment: [
       {
         id: "comp-1",
@@ -149,8 +149,8 @@ const labData: Lab[] = [
     id: "comp-lab-2",
     name: "LAB 315",
     floor: "Third Floor",
-    building: "IT Building",
-    department: "Computer Engineering",
+    building: "",
+    department: "",
     equipment: [
       {
         id: "comp-2-1",
@@ -179,8 +179,8 @@ const labData: Lab[] = [
     id: "mech-lab-1",
     name: "Mechanical Workshop",
     floor: "Ground Floor",
-    building: "Workshop Building",
-    department: "Mechanical Engineering",
+    building: "",
+    department: "",
     equipment: [
       {
         id: "mech-1",
@@ -223,8 +223,8 @@ const labData: Lab[] = [
     id: "civil-lab-1",
     name: "Concrete Testing Laboratory",
     floor: "Ground Floor",
-    building: "Civil Block",
-    department: "Civil Engineering",
+    building: "",
+    department: "",
     equipment: [
       {
         id: "civil-1",
@@ -260,8 +260,8 @@ const labData: Lab[] = [
     id: "ecs-lab-1",
     name: "Electronics & Communication Lab",
     floor: "Third Floor",
-    building: "Main Building",
-    department: "Electronics & Communication",
+    building: "",
+    department: "",
     equipment: [
       {
         id: "ecs-1",
@@ -297,8 +297,8 @@ const labData: Lab[] = [
     id: "biotech-lab-1",
     name: "Biotechnology Laboratory",
     floor: "Second Floor",
-    building: "Science Block",
-    department: "Biotechnology",
+    building: "",
+    department: "",
     equipment: [
       {
         id: "bio-1",
@@ -341,8 +341,8 @@ const labData: Lab[] = [
     id: "it-lab-1",
     name: "Information Technology Lab",
     floor: "Third Floor",
-    building: "IT Building",
-    department: "Information Technology",
+    building: "",
+    department: "",
     equipment: [
       {
         id: "it-1",
@@ -378,8 +378,8 @@ const labData: Lab[] = [
     id: "aids-lab-1",
     name: "AI & Data Science Laboratory",
     floor: "Fourth Floor",
-    building: "IT Building",
-    department: "AI & Data Science",
+    building: "",
+    department: "",
     equipment: [
       {
         id: "aids-1",
@@ -415,8 +415,8 @@ const labData: Lab[] = [
     id: "aiml-lab-1",
     name: "AI & Machine Learning Lab",
     floor: "Fourth Floor",
-    building: "Main Building",
-    department: "AI & Machine Learning",
+    building: "",
+    department: "",
     equipment: [
       {
         id: "aiml-1",
@@ -452,8 +452,8 @@ const labData: Lab[] = [
     id: "iot-lab-1",
     name: "Internet of Things Laboratory",
     floor: "Second Floor",
-    building: "IT Building",
-    department: "Internet of Things",
+    building: "",
+    department: "",
     equipment: [
       {
         id: "iot-1",
@@ -489,8 +489,8 @@ const labData: Lab[] = [
     id: "env-lab-1",
     name: "Environmental Engineering Lab",
     floor: "Ground Floor",
-    building: "Civil Block",
-    department: "Civil Engineering",
+    building: "",
+    department: "",
     equipment: [
       {
         id: "env-1",
@@ -526,8 +526,8 @@ const labData: Lab[] = [
     id: "auto-lab-1",
     name: "Automobile Engineering Lab",
     floor: "Ground Floor",
-    building: "Workshop Building",
-    department: "Mechanical Engineering",
+    building: "",
+    department: "",
     equipment: [
       {
         id: "auto-1",
@@ -563,8 +563,8 @@ const labData: Lab[] = [
     id: "thermal-lab-1",
     name: "Thermal Engineering Laboratory",
     floor: "First Floor",
-    building: "Workshop Building",
-    department: "Mechanical Engineering",
+    building: "",
+    department: "",
     equipment: [
       {
         id: "thermal-1",
@@ -600,8 +600,8 @@ const labData: Lab[] = [
     id: "vlsi-lab-1",
     name: "VLSI Design Laboratory",
     floor: "Third Floor",
-    building: "Main Building",
-    department: "Electronics & Communication",
+    building: "",
+    department: "",
     equipment: [
       {
         id: "vlsi-1",
@@ -637,8 +637,8 @@ const labData: Lab[] = [
     id: "micro-lab-1",
     name: "Microprocessor Laboratory",
     floor: "Second Floor",
-    building: "Main Building",
-    department: "Electronics & Communication",
+    building: "",
+    department: "",
     equipment: [
       {
         id: "micro-1",
@@ -674,8 +674,8 @@ const labData: Lab[] = [
     id: "survey-lab-1",
     name: "Surveying Laboratory",
     floor: "Ground Floor",
-    building: "Civil Block",
-    department: "Civil Engineering",
+    building: "",
+    department: "",
     equipment: [
       {
         id: "survey-1",
@@ -711,8 +711,8 @@ const labData: Lab[] = [
     id: "struct-lab-1",
     name: "Structural Engineering Lab",
     floor: "First Floor",
-    building: "Civil Block",
-    department: "Civil Engineering",
+    building: "",
+    department: "",
     equipment: [
       {
         id: "struct-1",
