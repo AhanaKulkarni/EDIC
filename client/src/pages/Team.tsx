@@ -98,7 +98,8 @@ const facultyCoordinators = [
   {
     name: "Sukruti Kaulgud",
     role: "Faculty Head, EDIC",
-    department: "Department of Computer Engineering"
+    department: "Department of Computer Engineering",
+    image: "/attached_assets/Screenshot 2025-06-26 105927_1750923638170.png"
   },
   {
     name: "Dr. Vinitkumar Dongre",
@@ -218,14 +219,23 @@ export default function Team() {
                 viewport={{ once: true }}
                 className="bg-white dark:bg-gray-900 rounded-xl shadow-lg p-8 border border-gray-200 dark:border-gray-700"
               >
-                <div>
-                  <h3 className="text-lg font-bold text-gray-900 dark:text-white">
-                    {faculty.name}
-                  </h3>
-                  <p className="text-primary">{faculty.role}</p>
-                  <p className="text-gray-600 dark:text-gray-300 text-sm">
-                    {faculty.department}
-                  </p>
+                <div className={faculty.image ? "flex items-center space-x-4" : ""}>
+                  {faculty.image && (
+                    <img
+                      src={faculty.image}
+                      alt={faculty.name}
+                      className="w-16 h-16 rounded-full object-cover"
+                    />
+                  )}
+                  <div>
+                    <h3 className="text-lg font-bold text-gray-900 dark:text-white">
+                      {faculty.name}
+                    </h3>
+                    <p className="text-primary">{faculty.role}</p>
+                    <p className="text-gray-600 dark:text-gray-300 text-sm">
+                      {faculty.department}
+                    </p>
+                  </div>
                 </div>
               </motion.div>
             ))}

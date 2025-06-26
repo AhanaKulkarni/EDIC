@@ -123,13 +123,20 @@ export default function About() {
               viewport={{ once: true }}
               className="bg-white dark:bg-gray-900 rounded-xl shadow-lg p-8 border border-gray-200 dark:border-gray-700"
             >
-              <div className="mb-6">
-                <h4 className="text-xl font-bold text-gray-900 dark:text-white">Sukruti Kaulgud</h4>
-                <p className="text-primary font-medium">Faculty Head, EDIC</p>
-                <p className="text-gray-600 dark:text-gray-300 text-sm">Department of Computer Engineering</p>
+              <div className="flex items-center space-x-4 mb-6">
+                <img
+                  src="/attached_assets/Screenshot 2025-06-26 105927_1750923638170.png"
+                  alt="Sukruti Kaulgud"
+                  className="w-20 h-20 rounded-full object-cover"
+                />
+                <div>
+                  <h4 className="text-xl font-bold text-gray-900 dark:text-white">Sukruti Kaulgud</h4>
+                  <p className="text-primary font-medium">Faculty Head, EDIC</p>
+                  <p className="text-gray-600 dark:text-gray-300 text-sm">Department of Computer Engineering</p>
+                </div>
               </div>
               <blockquote className="text-gray-600 dark:text-gray-300 italic">
-                "Innovation is not just about technology; it's about solving real-world problems and creating value for society. EDIC provides the perfect platform for our students to explore their entrepreneurial potential."
+                "As the Head of the Innovation and Entrepreneurship Cell, I extend a warm invitation to all engineering students ready to embark on their entrepreneurial journey. This is a pivotal time to transform your innovative ideas into impactful ventures, and our cell is here to guide you every step of the way. We offer a vibrant ecosystem designed to nurture your ideas, connect you with mentors, and provide the resources needed to overcome challenges. Don't let hesitation hold you back; seize this opportunity to learn, innovate, and contribute to solving real-world problems. We're excited to support your entrepreneurial dreams and help you shape the future."
               </blockquote>
             </motion.div>
 
