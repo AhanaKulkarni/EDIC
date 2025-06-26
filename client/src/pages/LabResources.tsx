@@ -36,38 +36,52 @@ const labData: Lab[] = [
     equipment: [
       {
         id: "chem-1",
-        name: "Digital pH Meter",
-        description: "Measures acidity and alkalinity of solutions with high precision",
-        quantity: 5,
+        name: "Distillation Assembly",
+        description: "Complete setup for separating liquid mixtures through distillation",
+        quantity: 1,
         status: "Available"
       },
       {
         id: "chem-2",
-        name: "Spectrophotometer",
-        description: "Analyzes light absorption to determine concentration of substances",
-        quantity: 2,
+        name: "Oil Bath with Magnetic Stirrer",
+        description: "Heating bath with magnetic stirring for controlled temperature reactions",
+        quantity: 1,
         status: "Available"
       },
       {
         id: "chem-3",
-        name: "Analytical Balance",
-        description: "High-precision weighing instrument for chemical analysis",
-        quantity: 8,
+        name: "Weighing Balance",
+        description: "Precision balance for accurate measurement of chemicals",
+        quantity: 1,
         status: "Available"
       },
       {
         id: "chem-4",
-        name: "Fume Hood",
-        description: "Ventilated enclosure for safe handling of hazardous chemicals",
-        quantity: 4,
+        name: "Oven",
+        description: "Laboratory oven for drying and heating samples",
+        quantity: 1,
         status: "Available"
       },
       {
         id: "chem-5",
-        name: "Rotary Evaporator",
-        description: "Removes solvents from samples through evaporation under reduced pressure",
+        name: "Ultrasound Bath",
+        description: "Ultrasonic cleaning and degassing equipment",
         quantity: 1,
-        status: "In Use"
+        status: "Available"
+      },
+      {
+        id: "chem-6",
+        name: "UV Apparatus",
+        description: "Ultraviolet light equipment for photochemical reactions",
+        quantity: 1,
+        status: "Available"
+      },
+      {
+        id: "chem-7",
+        name: "Colorimeter",
+        description: "Instrument for measuring color intensity and concentration",
+        quantity: 4,
+        status: "Available"
       }
     ]
   },

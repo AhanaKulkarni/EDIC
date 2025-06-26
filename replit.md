@@ -105,6 +105,7 @@ The application defines four main entities:
 Changelog:
 - June 26, 2025. Initial setup
 - June 26, 2025. Added comprehensive Lab Resources system with 17+ laboratories covering all engineering departments, equipment directory with detailed descriptions, and invoice generation system with faculty signatures for equipment requests
+- June 26, 2025. Updated Chemistry Laboratory with accurate equipment inventory including Distillation Assembly, Oil Bath with Magnetic Stirrer, Weighing Balance, Oven, Ultrasound Bath, UV Apparatus, and Colorimeter with correct quantities
 
 ## User Preferences
 
