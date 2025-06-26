@@ -131,7 +131,7 @@ const labData: Lab[] = [
   },
   {
     id: "comp-lab-1",
-    name: "Computer Programming Lab - Room 216",
+    name: "LAB 216",
     floor: "Second Floor",
     building: "IT Building",
     department: "Computer Engineering",
@@ -147,7 +147,7 @@ const labData: Lab[] = [
   },
   {
     id: "comp-lab-2",
-    name: "Computer Programming Lab - Room 315",
+    name: "LAB 315",
     floor: "Third Floor",
     building: "IT Building",
     department: "Computer Engineering",
