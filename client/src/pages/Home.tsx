@@ -1,9 +1,30 @@
 import { motion } from "framer-motion";
+import { useState, useEffect } from "react";
 import { Link } from "wouter";
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Users, TrendingUp, Award, Calendar } from "lucide-react";
 
 export default function Home() {
+  const quotes = [
+    "Building the next generation of entrepreneurs and innovators",
+    "Innovation distinguishes between a leader and a follower",
+    "The way to get started is to quit talking and begin doing",
+    "Your limitation—it's only your imagination",
+    "Great things never come from comfort zones",
+    "Success is not final, failure is not fatal: it is the courage to continue that counts",
+    "The future belongs to those who believe in the beauty of their dreams"
+  ];
+
+  const [currentQuote, setCurrentQuote] = useState(0);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentQuote((prev) => (prev + 1) % quotes.length);
+    }, 3500);
+
+    return () => clearInterval(interval);
+  }, []);
+
   return (
     <div className="min-h-screen">
       {/* Hero Section */}
@@ -34,13 +55,15 @@ export default function Home() {
                 <span className="text-gray-900 dark:text-white">at TCET</span>
               </h1>
               <motion.div
-                initial={{ opacity: 0 }}
-                animate={{ opacity: 1 }}
-                transition={{ duration: 0.8, delay: 0.2 }}
-                className="text-xl mb-8"
+                key={currentQuote}
+                initial={{ opacity: 0, y: 10 }}
+                animate={{ opacity: 1, y: 0 }}
+                exit={{ opacity: 0, y: -10 }}
+                transition={{ duration: 0.5 }}
+                className="text-xl mb-8 min-h-[3.5rem] flex items-center"
               >
                 <p className="gradient-text-secondary font-semibold">
-                  Building the next generation of entrepreneurs and innovators
+                  {quotes[currentQuote]}
                 </p>
               </motion.div>
               <p className="text-lg text-gray-600 dark:text-gray-300 mb-8 max-w-2xl">
