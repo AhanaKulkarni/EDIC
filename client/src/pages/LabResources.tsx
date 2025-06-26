@@ -31,7 +31,7 @@ const labData: Lab[] = [
     id: "chem-lab-1",
     name: "Chemistry Laboratory",
     floor: "Ground Floor",
-    building: "Main Building",
+    building: "",
     department: "Applied Sciences",
     equipment: [
       {
