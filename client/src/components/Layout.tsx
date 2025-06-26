@@ -27,18 +27,18 @@ export function Layout({ children }: { children: React.ReactNode }) {
       {/* Navigation */}
       <nav className="fixed top-0 left-0 right-0 z-50 bg-background/80 backdrop-blur-md border-b border-border">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex items-center justify-between h-16">
+          <div className="flex items-center justify-between h-20">
             {/* Logo */}
             <Link href="/" className="flex items-center space-x-3 md:flex-1">
               <img 
                 src={tcetLogo} 
                 alt="TCET Logo" 
-                className="h-10 w-auto"
+                className="h-14 w-auto"
               />
               <img 
                 src={edicLogo} 
                 alt="EDIC Logo" 
-                className="h-10 w-auto"
+                className="h-14 w-auto"
               />
             </Link>
 
@@ -124,7 +124,7 @@ export function Layout({ children }: { children: React.ReactNode }) {
       </nav>
 
       {/* Main Content */}
-      <main className="pt-16">
+      <main className="pt-20">
         {children}
       </main>
 
