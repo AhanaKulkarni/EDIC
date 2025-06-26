@@ -28,7 +28,7 @@ export default function Home() {
   return (
     <div className="min-h-screen">
       {/* Hero Section */}
-      <section className="relative min-h-screen flex items-center bg-gradient-to-br from-blue-50 to-white dark:from-gray-900 dark:to-gray-800 entrepreneurship-bg">
+      <section className="relative min-h-screen flex items-center bg-gradient-to-br from-purple-50 via-blue-50 to-cyan-50 dark:from-gray-900 dark:to-gray-800 entrepreneurship-bg">
         {/* Floating Background Icons */}
         <div className="floating-icons">
           <div className="floating-icon">💡</div>
@@ -128,25 +128,25 @@ export default function Home() {
             viewport={{ once: true }}
             className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6"
           >
-            <div className="text-center p-6 gradient-card rounded-xl card-hover">
-              <TrendingUp className="h-8 w-8 text-primary mx-auto mb-4" />
-              <div className="text-3xl font-bold text-primary mb-2">67</div>
-              <div className="text-gray-600 dark:text-gray-300">Student Startups</div>
+            <div className="text-center p-6 colorful-card rounded-xl card-hover bg-gradient-to-br from-purple-100 to-purple-200 dark:from-purple-900 dark:to-purple-800">
+              <TrendingUp className="h-8 w-8 text-purple-600 dark:text-purple-400 mx-auto mb-4" />
+              <div className="text-3xl font-bold text-purple-700 dark:text-purple-300 mb-2">67</div>
+              <div className="text-purple-600 dark:text-purple-400">Student Startups</div>
             </div>
-            <div className="text-center p-6 gradient-card rounded-xl card-hover">
-              <Award className="h-8 w-8 text-primary mx-auto mb-4" />
-              <div className="text-3xl font-bold text-primary mb-2">₹4L+</div>
-              <div className="text-gray-600 dark:text-gray-300">Funding Raised</div>
+            <div className="text-center p-6 colorful-card rounded-xl card-hover bg-gradient-to-br from-cyan-100 to-cyan-200 dark:from-cyan-900 dark:to-cyan-800">
+              <Award className="h-8 w-8 text-cyan-600 dark:text-cyan-400 mx-auto mb-4" />
+              <div className="text-3xl font-bold text-cyan-700 dark:text-cyan-300 mb-2">₹4L+</div>
+              <div className="text-cyan-600 dark:text-cyan-400">Funding Raised</div>
             </div>
-            <div className="text-center p-6 gradient-card rounded-xl card-hover">
-              <Calendar className="h-8 w-8 text-primary mx-auto mb-4" />
-              <div className="text-3xl font-bold text-primary mb-2">25+</div>
-              <div className="text-gray-600 dark:text-gray-300">Events Organized</div>
+            <div className="text-center p-6 colorful-card rounded-xl card-hover bg-gradient-to-br from-emerald-100 to-emerald-200 dark:from-emerald-900 dark:to-emerald-800">
+              <Calendar className="h-8 w-8 text-emerald-600 dark:text-emerald-400 mx-auto mb-4" />
+              <div className="text-3xl font-bold text-emerald-700 dark:text-emerald-300 mb-2">25+</div>
+              <div className="text-emerald-600 dark:text-emerald-400">Events Organized</div>
             </div>
-            <div className="text-center p-6 gradient-card rounded-xl card-hover">
-              <Users className="h-8 w-8 text-primary mx-auto mb-4" />
-              <div className="text-3xl font-bold text-primary mb-2">500+</div>
-              <div className="text-gray-600 dark:text-gray-300">Students Mentored</div>
+            <div className="text-center p-6 colorful-card rounded-xl card-hover bg-gradient-to-br from-orange-100 to-orange-200 dark:from-orange-900 dark:to-orange-800">
+              <Users className="h-8 w-8 text-orange-600 dark:text-orange-400 mx-auto mb-4" />
+              <div className="text-3xl font-bold text-orange-700 dark:text-orange-300 mb-2">500+</div>
+              <div className="text-orange-600 dark:text-orange-400">Students Mentored</div>
             </div>
           </motion.div>
         </div>
