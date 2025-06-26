@@ -1,0 +1,168 @@
+Build a modern, responsive website for TCET's Entrepreneurship Development and Innovation Cell (EDIC) using React + Tailwind CSS.
+
+The site should include the following fully designed and responsive pages, using React Router:
+
+🏠 Pages & Sections:
+
+Home
+Hero section with EDIC branding and call-to-action
+Animated tagline
+
+Join/Register Now button
+
+Dark mode toggle
+
+About
+Vision & Mission
+Dummy achievements (e.g., "20+ student startups", "INR 10L+ raised", etc.)
+
+Our story — how EDIC started
+
+Faculty Head intro with photo + quote
+
+Dean Sir’s short intro (with image and message)
+
+Team
+Core committee cards with:
+Name
+
+Role
+
+Department/year
+
+LinkedIn icons
+
+Faculty coordinators
+
+Alumni testimonials (dummy)
+
+Events
+Upcoming events section (dummy cards with date, title, CTA)
+Past events with images & short write-ups
+
+Carousel for featured events
+
+Startups
+List of student-run startups under EDIC
+Company logos, founders, brief descriptions
+
+Status tags (e.g., Active / Incubated / Funding)
+
+Student’s Corner
+Submit your idea (form)
+Request mentorship (form)
+
+View shared resources (PDF links / articles)
+
+Register
+Form with: Name, Email, Branch, Year
+Form should submit to a Google Sheet via Sheet.best API
+
+Show success/failure message on submit
+
+Contact Us
+Email, phone, campus address
+Google Maps embed
+
+Social media icons (LinkedIn, Instagram, etc.)
+
+💡 Features:
+React Router setup
+
+Mobile-first + fully responsive layout
+
+TailwindCSS for styling
+
+Dark/light mode toggle
+
+lucide-react icons or heroicons
+
+Form submission with Sheet.best API → stores data to Google Sheets
+
+Framer Motion for smooth animations
+
+Keep the theme white and blue+black or white and brown whatever deems fot fo rentrepreneurship
+Build a modern, responsive website for TCET's Entrepreneurship Development and Innovation Cell (EDIC) using React + Tailwind CSS.
+
+The site should include the following fully designed and responsive pages, using React Router:
+
+🏠 Pages & Sections:
+
+Home
+Hero section with EDIC branding
+Animated tagline
+
+Join/Register Now button
+
+Dark mode toggle
+
+About
+Vision & Mission
+Dummy achievements (e.g., "20+ student startups", "INR 10L+ raised", etc.)
+
+Our story — how EDIC started
+
+Faculty Head intro with photo + quote
+
+Dean Sir’s short intro (with image and message)
+
+Team
+Core committee cards with:
+Name
+
+Role
+
+Department/year
+
+LinkedIn icons
+
+Faculty coordinators
+
+Alumni testimonials (dummy)
+
+Events
+Upcoming events section (dummy cards with date, title, CTA)
+Past events with images & short write-ups
+
+Carousel for featured events
+
+Startups
+List of student-run startups under EDIC
+Company logos, founders, brief descriptions
+
+Status tags (e.g., Active / Incubated / Funding)
+
+Student’s Corner
+Submit your idea (form)
+Request mentorship (form)
+
+View shared resources (PDF links / articles)
+
+Register
+Form with: Name, Email, Branch, Year
+Form should submit to a Google Sheet via Sheet.best API
+
+Show success/failure message on submit
+
+Contact Us
+Email, phone, campus address
+Google Maps embed
+
+Social media icons (LinkedIn, Instagram, etc.)
+
+💡 Features:
+React Router setup
+
+Mobile-first + fully responsive layout
+
+TailwindCSS for styling
+
+Dark/light mode toggle
+
+lucide-react icons or heroicons
+
+Form submission with Sheet.best API → stores data to Google Sheets
+
+Framer Motion for smooth animations
+
+Keep the theme white and blue+black or white and brown whatever deems fot fo rentrepreneurship
