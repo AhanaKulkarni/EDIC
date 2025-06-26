@@ -83,13 +83,13 @@ export default function Register() {
   return (
     <div className="min-h-screen">
       {/* Header */}
-      <section className="py-20 gradient-hero text-white">
+      <section className="py-20 bg-primary dark:bg-primary text-white">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <motion.h1
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
-            className="text-4xl sm:text-5xl font-bold mb-6"
+            className="text-4xl sm:text-5xl font-bold mb-6 text-white"
           >
             Join TCET EDIC
           </motion.h1>
@@ -97,7 +97,7 @@ export default function Register() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.2 }}
-            className="text-xl text-blue-100 max-w-2xl mx-auto"
+            className="text-xl text-blue-100 dark:text-blue-200 max-w-2xl mx-auto"
           >
             Become part of our entrepreneurial community and start your journey towards innovation and success
           </motion.p>
