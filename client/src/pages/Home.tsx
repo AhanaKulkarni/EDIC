@@ -28,7 +28,7 @@ export default function Home() {
   return (
     <div className="min-h-screen">
       {/* Hero Section */}
-      <section className="relative min-h-screen flex items-center bg-blue-50 dark:from-gray-900 dark:to-gray-800 entrepreneurship-bg">
+      <section className="relative min-h-screen flex items-center bg-blue-50 dark:bg-slate-900 entrepreneurship-bg">
         {/* Floating Background Icons */}
         <div className="floating-icons">
           <div className="floating-icon">💡</div>
@@ -153,7 +153,7 @@ export default function Home() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-20 gradient-hero text-white">
+      <section className="py-20 bg-primary dark:bg-primary text-white">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -161,14 +161,14 @@ export default function Home() {
             transition={{ duration: 0.6 }}
             viewport={{ once: true }}
           >
-            <h2 className="text-3xl sm:text-4xl font-bold mb-6">
+            <h2 className="text-3xl sm:text-4xl font-bold mb-6 text-white">
               Ready to Start Your Entrepreneurial Journey?
             </h2>
-            <p className="text-xl text-blue-100 mb-8 max-w-2xl mx-auto">
+            <p className="text-xl text-blue-100 dark:text-blue-200 mb-8 max-w-2xl mx-auto">
               Join hundreds of students who have transformed their ideas into successful ventures with EDIC's support.
             </p>
             <Link href="/register">
-              <Button size="lg" variant="secondary" className="font-semibold">
+              <Button size="lg" variant="secondary" className="font-semibold bg-white text-primary hover:bg-gray-100 dark:bg-slate-800 dark:text-white dark:hover:bg-slate-700">
                 Get Started Today
                 <ArrowRight className="ml-2 h-5 w-5" />
               </Button>
