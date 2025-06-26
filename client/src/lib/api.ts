@@ -27,6 +27,17 @@ export interface MentorshipData {
   phone: string;
 }
 
+export interface ResourceRequestData {
+  resourceType: string;
+  specificResource: string;
+  purpose: string;
+  timeline: string;
+  name: string;
+  email: string;
+  branch: string;
+  year: string;
+}
+
 export const api = {
   register: async (data: RegistrationData) => {
     const response = await apiRequest('POST', '/api/register', data);
@@ -40,6 +51,11 @@ export const api = {
 
   requestMentorship: async (data: MentorshipData) => {
     const response = await apiRequest('POST', '/api/request-mentorship', data);
+    return response.json();
+  },
+
+  requestResource: async (data: ResourceRequestData) => {
+    const response = await apiRequest('POST', '/api/request-resource', data);
     return response.json();
   },
 };

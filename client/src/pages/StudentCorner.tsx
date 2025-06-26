@@ -8,7 +8,7 @@ import { Textarea } from "@/components/ui/textarea";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 import { useToast } from "@/hooks/use-toast";
 import { useMutation } from "@tanstack/react-query";
-import { api, type IdeaData, type MentorshipData, type RegistrationData } from "@/lib/api";
+import { api, type IdeaData, type MentorshipData, type RegistrationData, type ResourceRequestData } from "@/lib/api";
 
 const resources = [
   {
@@ -76,6 +76,17 @@ export default function StudentCorner() {
     phone: "",
     reason: "",
     interests: []
+  });
+
+  const [resourceForm, setResourceForm] = useState<ResourceRequestData>({
+    resourceType: "",
+    specificResource: "",
+    purpose: "",
+    timeline: "",
+    name: "",
+    email: "",
+    branch: "",
+    year: ""
   });
 
   const ideaMutation = useMutation({
@@ -153,6 +164,33 @@ export default function StudentCorner() {
     }
   });
 
+  const resourceMutation = useMutation({
+    mutationFn: api.requestResource,
+    onSuccess: () => {
+      toast({
+        title: "Resource Request Submitted!",
+        description: "Your resource request has been submitted. We'll process it and get back to you soon.",
+      });
+      setResourceForm({
+        resourceType: "",
+        specificResource: "",
+        purpose: "",
+        timeline: "",
+        name: "",
+        email: "",
+        branch: "",
+        year: ""
+      });
+    },
+    onError: () => {
+      toast({
+        title: "Request Failed",
+        description: "Failed to submit your resource request. Please try again.",
+        variant: "destructive",
+      });
+    }
+  });
+
   const handleIdeaSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     ideaMutation.mutate(ideaForm);
@@ -166,6 +204,11 @@ export default function StudentCorner() {
   const handleRegistrationSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     registrationMutation.mutate(registrationForm);
+  };
+
+  const handleResourceSubmit = (e: React.FormEvent) => {
+    e.preventDefault();
+    resourceMutation.mutate(resourceForm);
   };
 
   const handleInterestChange = (interest: string, checked: boolean) => {
@@ -218,7 +261,7 @@ export default function StudentCorner() {
       {/* Forms Section */}
       <section className="py-20 bg-white dark:bg-gray-900">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 mb-16">
+          <div className="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-4 gap-8 mb-16">
             {/* Submit Idea Form */}
             <motion.div
               initial={{ opacity: 0, x: -20 }}
