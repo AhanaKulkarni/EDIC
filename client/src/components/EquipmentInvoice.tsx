@@ -65,57 +65,57 @@ export function EquipmentInvoice({ equipment, studentInfo, purpose, timeline, on
         </div>
 
         {/* Invoice Content */}
-        <div className="p-8 bg-white text-black" id="invoice-content">
+        <div className="p-4 bg-white text-black text-xs" id="invoice-content">
           {/* Header */}
-          <div className="flex items-center justify-between mb-8">
-            <div className="flex items-center space-x-4">
-              <img src={tcetLogo} alt="TCET Logo" className="h-16 w-auto" />
-              <img src={edicLogo} alt="EDIC Logo" className="h-16 w-auto" />
+          <div className="flex items-center justify-between mb-4">
+            <div className="flex items-center space-x-2">
+              <img src={tcetLogo} alt="TCET Logo" className="h-12 w-auto" />
+              <img src={edicLogo} alt="EDIC Logo" className="h-12 w-auto" />
             </div>
             <div className="text-right">
-              <h1 className="text-2xl font-bold text-blue-600">EQUIPMENT REQUEST</h1>
-              <p className="text-sm text-gray-600 mt-1">Thakur College of Engineering & Technology</p>
-              <p className="text-sm text-gray-600">Entrepreneurship Development and Innovation Cell</p>
+              <h1 className="text-lg font-bold text-blue-600">EQUIPMENT REQUEST</h1>
+              <p className="text-xs text-gray-600">Thakur College of Engineering & Technology</p>
+              <p className="text-xs text-gray-600">Entrepreneurship Development and Innovation Cell</p>
             </div>
           </div>
 
           {/* Invoice Details */}
-          <div className="grid grid-cols-2 gap-8 mb-8">
+          <div className="grid grid-cols-2 gap-4 mb-3">
             <div>
-              <h3 className="text-lg font-semibold text-gray-900 mb-4">Request Details</h3>
-              <div className="space-y-2 text-sm">
+              <h3 className="text-sm font-semibold text-gray-900 mb-2">Request Details</h3>
+              <div className="space-y-1">
                 <div className="flex">
-                  <span className="font-medium w-24">Invoice No:</span>
+                  <span className="font-medium w-20">Invoice No:</span>
                   <span>{invoiceNumber}</span>
                 </div>
                 <div className="flex">
-                  <span className="font-medium w-24">Date:</span>
+                  <span className="font-medium w-20">Date:</span>
                   <span>{currentDate}</span>
                 </div>
                 <div className="flex">
-                  <span className="font-medium w-24">Timeline:</span>
+                  <span className="font-medium w-20">Timeline:</span>
                   <span>{timeline}</span>
                 </div>
               </div>
             </div>
             
             <div>
-              <h3 className="text-lg font-semibold text-gray-900 mb-4">Student Information</h3>
-              <div className="space-y-2 text-sm">
+              <h3 className="text-sm font-semibold text-gray-900 mb-2">Student Information</h3>
+              <div className="space-y-1">
                 <div className="flex">
-                  <span className="font-medium w-20">Name:</span>
+                  <span className="font-medium w-16">Name:</span>
                   <span>{studentInfo.name}</span>
                 </div>
                 <div className="flex">
-                  <span className="font-medium w-20">Email:</span>
+                  <span className="font-medium w-16">Email:</span>
                   <span>{studentInfo.email}</span>
                 </div>
                 <div className="flex">
-                  <span className="font-medium w-20">Branch:</span>
+                  <span className="font-medium w-16">Branch:</span>
                   <span>{studentInfo.branch}</span>
                 </div>
                 <div className="flex">
-                  <span className="font-medium w-20">Year:</span>
+                  <span className="font-medium w-16">Year:</span>
                   <span>{studentInfo.year}</span>
                 </div>
                 {studentInfo.rollNo && (
@@ -135,34 +135,34 @@ export function EquipmentInvoice({ equipment, studentInfo, purpose, timeline, on
           </div>
 
           {/* Purpose */}
-          <div className="mb-8">
-            <h3 className="text-lg font-semibold text-gray-900 mb-2">Purpose of Request</h3>
-            <p className="text-sm text-gray-700 bg-gray-50 p-3 rounded border">{purpose}</p>
+          <div className="mb-3">
+            <h3 className="text-sm font-semibold text-gray-900 mb-1">Purpose of Request</h3>
+            <p className="text-xs text-gray-700 bg-gray-50 p-2 rounded border">{purpose}</p>
           </div>
 
           {/* Equipment Table */}
-          <div className="mb-8">
-            <h3 className="text-lg font-semibold text-gray-900 mb-4">Requested Equipment</h3>
-            <table className="w-full border border-gray-300">
+          <div className="mb-3">
+            <h3 className="text-sm font-semibold text-gray-900 mb-2">Requested Equipment</h3>
+            <table className="w-full border border-gray-300 text-xs">
               <thead>
                 <tr className="bg-gray-100">
-                  <th className="border border-gray-300 px-4 py-2 text-left text-sm font-medium">Sr. No.</th>
-                  <th className="border border-gray-300 px-4 py-2 text-left text-sm font-medium">Equipment Name</th>
-                  <th className="border border-gray-300 px-4 py-2 text-left text-sm font-medium">Description</th>
-                  <th className="border border-gray-300 px-4 py-2 text-left text-sm font-medium">Laboratory</th>
-                  <th className="border border-gray-300 px-4 py-2 text-left text-sm font-medium">Location</th>
-                  <th className="border border-gray-300 px-4 py-2 text-center text-sm font-medium">Qty</th>
+                  <th className="border border-gray-300 px-2 py-1 text-left font-medium">Sr. No.</th>
+                  <th className="border border-gray-300 px-2 py-1 text-left font-medium">Equipment Name</th>
+                  <th className="border border-gray-300 px-2 py-1 text-left font-medium">Description</th>
+                  <th className="border border-gray-300 px-2 py-1 text-left font-medium">Laboratory</th>
+                  <th className="border border-gray-300 px-2 py-1 text-left font-medium">Location</th>
+                  <th className="border border-gray-300 px-2 py-1 text-center font-medium">Qty</th>
                 </tr>
               </thead>
               <tbody>
                 {equipment.map((item, index) => (
-                  <tr key={item.id} className="hover:bg-gray-50">
-                    <td className="border border-gray-300 px-4 py-2 text-sm">{index + 1}</td>
-                    <td className="border border-gray-300 px-4 py-2 text-sm font-medium">{item.name}</td>
-                    <td className="border border-gray-300 px-4 py-2 text-sm">{item.description}</td>
-                    <td className="border border-gray-300 px-4 py-2 text-sm">{item.labName}</td>
-                    <td className="border border-gray-300 px-4 py-2 text-sm">{item.labLocation}</td>
-                    <td className="border border-gray-300 px-4 py-2 text-sm text-center">{item.quantity}</td>
+                  <tr key={item.id}>
+                    <td className="border border-gray-300 px-2 py-1">{index + 1}</td>
+                    <td className="border border-gray-300 px-2 py-1 font-medium">{item.name}</td>
+                    <td className="border border-gray-300 px-2 py-1">{item.description}</td>
+                    <td className="border border-gray-300 px-2 py-1">{item.labName}</td>
+                    <td className="border border-gray-300 px-2 py-1">{item.labLocation}</td>
+                    <td className="border border-gray-300 px-2 py-1 text-center">{item.quantity}</td>
                   </tr>
                 ))}
               </tbody>
@@ -170,48 +170,41 @@ export function EquipmentInvoice({ equipment, studentInfo, purpose, timeline, on
           </div>
 
           {/* Terms and Conditions */}
-          <div className="mb-8">
-            <h3 className="text-lg font-semibold text-gray-900 mb-2">Terms and Conditions</h3>
-            <ul className="text-sm text-gray-700 space-y-1 list-disc list-inside">
+          <div className="mb-3">
+            <h3 className="text-sm font-semibold text-gray-900 mb-1">Terms and Conditions</h3>
+            <ul className="text-xs text-gray-700 space-y-0 list-disc list-inside">
               <li>All equipment must be returned in the same condition as received</li>
               <li>Student is responsible for any damage or loss of equipment</li>
               <li>Equipment usage is subject to lab availability and faculty supervision</li>
               <li>This request is subject to approval by the respective department head</li>
-              <li>Equipment must be used only for the stated purpose</li>
-              <li>Student must follow all safety protocols while using the equipment</li>
             </ul>
           </div>
 
           {/* Signatures */}
-          <div className="grid grid-cols-2 gap-8 mt-12">
+          <div className="grid grid-cols-2 gap-4 mt-4">
             <div className="text-center">
-              <div className="h-16 mb-2"></div>
-              <div className="border-t border-gray-400 pt-2">
-                <p className="font-semibold text-sm">Mr. Ashish Dwivedi</p>
+              <div className="h-8 mb-1"></div>
+              <div className="border-t border-gray-400 pt-1">
+                <p className="font-semibold text-xs">Mr. Ashish Dwivedi</p>
                 <p className="text-xs text-gray-600">Faculty Coordinator</p>
-                <p className="text-xs text-gray-600">Department of Computer Engineering</p>
                 <p className="text-xs text-gray-600">TCET EDIC</p>
               </div>
             </div>
             
             <div className="text-center">
-              <div className="h-16 mb-2"></div>
-              <div className="border-t border-gray-400 pt-2">
-                <p className="font-semibold text-sm">Dr. Vinitkumar Dongre</p>
+              <div className="h-8 mb-1"></div>
+              <div className="border-t border-gray-400 pt-1">
+                <p className="font-semibold text-xs">Dr. Vinitkumar Dongre</p>
                 <p className="text-xs text-gray-600">Dean R&D</p>
-                <p className="text-xs text-gray-600">Thakur College of Engineering & Technology</p>
                 <p className="text-xs text-gray-600">Approval Authority</p>
               </div>
             </div>
           </div>
 
           {/* Footer */}
-          <div className="mt-8 pt-4 border-t border-gray-200 text-center">
+          <div className="mt-3 pt-2 border-t border-gray-200 text-center">
             <p className="text-xs text-gray-500">
               This is a computer-generated document. For queries, contact EDIC at edic@tcetmumbai.in
-            </p>
-            <p className="text-xs text-gray-500 mt-1">
-              Thakur College of Engineering & Technology, Kandivali East, Mumbai - 400101
             </p>
           </div>
         </div>
