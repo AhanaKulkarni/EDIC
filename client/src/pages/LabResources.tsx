@@ -131,37 +131,46 @@ const labData: Lab[] = [
   },
   {
     id: "comp-lab-1",
-    name: "Computer Programming Lab",
+    name: "Computer Programming Lab - Room 216",
     floor: "Second Floor",
     building: "IT Building",
     department: "Computer Engineering",
     equipment: [
       {
         id: "comp-1",
-        name: "High-Performance Workstations",
-        description: "Intel i7 processors with 16GB RAM for software development",
-        quantity: 60,
+        name: "Desktop Computers",
+        description: "Programming workstations for software development and coding practice",
+        quantity: 70,
+        status: "Available"
+      }
+    ]
+  },
+  {
+    id: "comp-lab-2",
+    name: "Computer Programming Lab - Room 315",
+    floor: "Third Floor",
+    building: "IT Building",
+    department: "Computer Engineering",
+    equipment: [
+      {
+        id: "comp-2-1",
+        name: "Desktop Computers",
+        description: "Programming workstations for software development and coding practice",
+        quantity: 28,
         status: "Available"
       },
       {
-        id: "comp-2",
-        name: "Network Simulator",
-        description: "Software for simulating network topologies and protocols",
-        quantity: 5,
+        id: "comp-2-2",
+        name: "Projector",
+        description: "Digital projector for presentations and demonstration purposes",
+        quantity: 1,
         status: "Available"
       },
       {
-        id: "comp-3",
-        name: "Development Boards (Arduino)",
-        description: "Microcontroller boards for IoT and embedded system projects",
-        quantity: 25,
-        status: "Available"
-      },
-      {
-        id: "comp-4",
-        name: "Raspberry Pi Kits",
-        description: "Single-board computers for prototyping and IoT applications",
-        quantity: 20,
+        id: "comp-2-3",
+        name: "Projector Screen",
+        description: "Display screen for projector presentations and lectures",
+        quantity: 1,
         status: "Available"
       }
     ]
