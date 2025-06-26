@@ -4,6 +4,8 @@ import { useTheme } from "./ThemeProvider";
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
+import tcetLogo from "@assets/Untitled design (19)_1750940056489.png";
+import edicLogo from "@assets/EDIC LOGO_1750940056488.png";
 
 const navItems = [
   { href: "/", label: "Home" },
@@ -27,8 +29,17 @@ export function Layout({ children }: { children: React.ReactNode }) {
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between h-16">
             {/* Logo */}
-            <Link href="/" className="flex items-center space-x-2 md:flex-1">
-              <div className="text-2xl font-bold text-primary">TCET EDIC</div>
+            <Link href="/" className="flex items-center space-x-3 md:flex-1">
+              <img 
+                src={tcetLogo} 
+                alt="TCET Logo" 
+                className="h-10 w-auto"
+              />
+              <img 
+                src={edicLogo} 
+                alt="EDIC Logo" 
+                className="h-10 w-auto"
+              />
             </Link>
 
             {/* Desktop Navigation - Centered */}
@@ -122,7 +133,18 @@ export function Layout({ children }: { children: React.ReactNode }) {
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
             <div>
-              <h3 className="text-2xl font-bold text-primary mb-6">TCET EDIC</h3>
+              <div className="flex items-center space-x-3 mb-6">
+                <img 
+                  src={tcetLogo} 
+                  alt="TCET Logo" 
+                  className="h-12 w-auto"
+                />
+                <img 
+                  src={edicLogo} 
+                  alt="EDIC Logo" 
+                  className="h-12 w-auto"
+                />
+              </div>
               <p className="text-gray-300 mb-6">
                 Fostering innovation and entrepreneurship at Thakur College of Engineering & Technology.
               </p>
