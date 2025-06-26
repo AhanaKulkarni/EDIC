@@ -47,10 +47,12 @@ export class MemStorage implements IStorage {
     this.registrations = new Map();
     this.ideas = new Map();
     this.mentorshipRequests = new Map();
+    this.resourceRequests = new Map();
     this.currentUserId = 1;
     this.currentRegistrationId = 1;
     this.currentIdeaId = 1;
     this.currentMentorshipRequestId = 1;
+    this.currentResourceRequestId = 1;
   }
 
   async getUser(id: number): Promise<User | undefined> {
@@ -119,6 +121,21 @@ export class MemStorage implements IStorage {
 
   async getAllMentorshipRequests(): Promise<MentorshipRequest[]> {
     return Array.from(this.mentorshipRequests.values());
+  }
+
+  async createResourceRequest(insertRequest: InsertResourceRequest): Promise<ResourceRequest> {
+    const id = this.currentResourceRequestId++;
+    const request: ResourceRequest = { 
+      ...insertRequest, 
+      id,
+      createdAt: new Date()
+    };
+    this.resourceRequests.set(id, request);
+    return request;
+  }
+
+  async getAllResourceRequests(): Promise<ResourceRequest[]> {
+    return Array.from(this.resourceRequests.values());
   }
 }
 

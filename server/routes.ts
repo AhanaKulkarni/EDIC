@@ -4,7 +4,8 @@ import { storage } from "./storage";
 import { 
   insertRegistrationSchema, 
   insertIdeaSchema, 
-  insertMentorshipRequestSchema 
+  insertMentorshipRequestSchema,
+  insertResourceRequestSchema
 } from "@shared/schema";
 import { z } from "zod";
 
@@ -135,6 +136,47 @@ export async function registerRoutes(app: Express): Promise<Server> {
     } catch (error) {
       console.error('Error fetching registrations:', error);
       res.status(500).json({ error: 'Failed to fetch registrations' });
+    }
+  });
+
+  // Resource request endpoint
+  app.post("/api/request-resource", async (req, res) => {
+    try {
+      const validatedData = insertResourceRequestSchema.parse(req.body);
+      const request = await storage.createResourceRequest(validatedData);
+      
+      // Also submit to Google Sheets via Sheet.best API
+      try {
+        const sheetBestUrl = process.env.SHEET_BEST_RESOURCE_URL || process.env.VITE_SHEET_BEST_RESOURCE_URL || "https://sheet.best/api/sheets/your-resource-sheet-id";
+        
+        await fetch(sheetBestUrl, {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+          },
+          body: JSON.stringify({
+            'Resource Type': validatedData.resourceType,
+            'Specific Resource': validatedData.specificResource,
+            Purpose: validatedData.purpose,
+            Timeline: validatedData.timeline,
+            Name: validatedData.name,
+            Email: validatedData.email,
+            Branch: validatedData.branch,
+            Year: validatedData.year,
+            Timestamp: new Date().toISOString(),
+          }),
+        });
+      } catch (sheetError) {
+        console.error('Failed to submit resource request to Google Sheets:', sheetError);
+      }
+      
+      res.json({ success: true, request });
+    } catch (error) {
+      console.error('Resource request error:', error);
+      res.status(400).json({ 
+        success: false, 
+        error: error instanceof z.ZodError ? error.errors : 'Resource request failed' 
+      });
     }
   });
 
