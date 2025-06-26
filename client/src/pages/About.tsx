@@ -11,7 +11,7 @@ export default function About() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
-            className="text-4xl sm:text-5xl font-bold text-gray-900 dark:text-white mb-6"
+            className="text-4xl sm:text-5xl font-bold gradient-text mb-6"
           >
             About TCET EDIC
           </motion.h1>
@@ -40,9 +40,9 @@ export default function About() {
               <div className="text-primary mb-4">
                 <Eye className="h-10 w-10" />
               </div>
-              <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-4">Our Vision</h3>
+              <h3 className="text-2xl font-bold gradient-text-secondary mb-4">Our Vision</h3>
               <p className="text-gray-600 dark:text-gray-300">
-                To foster a culture of innovation and entrepreneurship at TCET, creating the next generation of successful entrepreneurs who will drive economic growth and social impact.
+                To cultivate a dynamic ecosystem of innovation and entrepreneurship, empowering students to become visionary leaders and creators of groundbreaking solutions.
               </p>
             </motion.div>
 
@@ -56,9 +56,9 @@ export default function About() {
               <div className="text-primary mb-4">
                 <Rocket className="h-10 w-10" />
               </div>
-              <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-4">Our Mission</h3>
+              <h3 className="text-2xl font-bold gradient-text-secondary mb-4">Our Mission</h3>
               <p className="text-gray-600 dark:text-gray-300">
-                To provide comprehensive support, mentorship, and resources to student entrepreneurs, helping them transform innovative ideas into viable business ventures.
+                To foster a culture of innovation and entrepreneurial spirit among students by providing resources, mentorship, and practical experience, enabling them to transform their ideas into viable businesses and become industry leaders.
               </p>
             </motion.div>
           </div>
@@ -72,11 +72,11 @@ export default function About() {
             className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mb-16"
           >
             <div className="text-center p-6 gradient-card rounded-xl">
-              <div className="text-3xl font-bold text-primary">25+</div>
+              <div className="text-3xl font-bold text-primary">67</div>
               <div className="text-gray-600 dark:text-gray-300 mt-2">Student Startups</div>
             </div>
             <div className="text-center p-6 gradient-card rounded-xl">
-              <div className="text-3xl font-bold text-primary">₹15L+</div>
+              <div className="text-3xl font-bold text-primary">₹4L+</div>
               <div className="text-gray-600 dark:text-gray-300 mt-2">Funding Raised</div>
             </div>
             <div className="text-center p-6 gradient-card rounded-xl">

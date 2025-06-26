@@ -129,24 +129,24 @@ export default function Home() {
             className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6"
           >
             <div className="text-center p-6 gradient-card rounded-xl card-hover">
-              <Users className="h-8 w-8 text-primary mx-auto mb-4" />
-              <div className="text-3xl font-bold text-primary mb-2">25+</div>
+              <TrendingUp className="h-8 w-8 text-primary mx-auto mb-4" />
+              <div className="text-3xl font-bold text-primary mb-2">67</div>
               <div className="text-gray-600 dark:text-gray-300">Student Startups</div>
             </div>
             <div className="text-center p-6 gradient-card rounded-xl card-hover">
-              <TrendingUp className="h-8 w-8 text-primary mx-auto mb-4" />
-              <div className="text-3xl font-bold text-primary mb-2">₹15L+</div>
+              <Award className="h-8 w-8 text-primary mx-auto mb-4" />
+              <div className="text-3xl font-bold text-primary mb-2">₹4L+</div>
               <div className="text-gray-600 dark:text-gray-300">Funding Raised</div>
+            </div>
+            <div className="text-center p-6 gradient-card rounded-xl card-hover">
+              <Calendar className="h-8 w-8 text-primary mx-auto mb-4" />
+              <div className="text-3xl font-bold text-primary mb-2">25+</div>
+              <div className="text-gray-600 dark:text-gray-300">Events Organized</div>
             </div>
             <div className="text-center p-6 gradient-card rounded-xl card-hover">
               <Users className="h-8 w-8 text-primary mx-auto mb-4" />
               <div className="text-3xl font-bold text-primary mb-2">500+</div>
               <div className="text-gray-600 dark:text-gray-300">Students Mentored</div>
-            </div>
-            <div className="text-center p-6 gradient-card rounded-xl card-hover">
-              <Calendar className="h-8 w-8 text-primary mx-auto mb-4" />
-              <div className="text-3xl font-bold text-primary mb-2">50+</div>
-              <div className="text-gray-600 dark:text-gray-300">Events Organized</div>
             </div>
           </motion.div>
         </div>
