@@ -3,6 +3,7 @@ import {
   registrations, 
   ideas, 
   mentorshipRequests,
+  resourceRequests,
   type User, 
   type InsertUser,
   type Registration,
@@ -10,7 +11,9 @@ import {
   type Idea,
   type InsertIdea,
   type MentorshipRequest,
-  type InsertMentorshipRequest
+  type InsertMentorshipRequest,
+  type ResourceRequest,
+  type InsertResourceRequest
 } from "@shared/schema";
 
 export interface IStorage {
@@ -20,9 +23,11 @@ export interface IStorage {
   createRegistration(registration: InsertRegistration): Promise<Registration>;
   createIdea(idea: InsertIdea): Promise<Idea>;
   createMentorshipRequest(request: InsertMentorshipRequest): Promise<MentorshipRequest>;
+  createResourceRequest(request: InsertResourceRequest): Promise<ResourceRequest>;
   getAllRegistrations(): Promise<Registration[]>;
   getAllIdeas(): Promise<Idea[]>;
   getAllMentorshipRequests(): Promise<MentorshipRequest[]>;
+  getAllResourceRequests(): Promise<ResourceRequest[]>;
 }
 
 export class MemStorage implements IStorage {
@@ -30,10 +35,12 @@ export class MemStorage implements IStorage {
   private registrations: Map<number, Registration>;
   private ideas: Map<number, Idea>;
   private mentorshipRequests: Map<number, MentorshipRequest>;
+  private resourceRequests: Map<number, ResourceRequest>;
   private currentUserId: number;
   private currentRegistrationId: number;
   private currentIdeaId: number;
   private currentMentorshipRequestId: number;
+  private currentResourceRequestId: number;
 
   constructor() {
     this.users = new Map();

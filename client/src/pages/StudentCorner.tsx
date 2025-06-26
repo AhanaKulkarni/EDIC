@@ -603,6 +603,158 @@ export default function StudentCorner() {
                 </Button>
               </form>
             </motion.div>
+
+            {/* Request Resources Form */}
+            <motion.div
+              initial={{ opacity: 0, x: 20 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              transition={{ duration: 0.6, delay: 0.3 }}
+              viewport={{ once: true }}
+              className="gradient-card rounded-2xl p-8 border border-gray-200 dark:border-gray-600"
+            >
+              <div className="flex items-center space-x-3 mb-6">
+                <div className="bg-primary/10 text-primary p-3 rounded-lg">
+                  <BookOpen className="h-6 w-6" />
+                </div>
+                <h3 className="text-2xl font-bold text-gray-900 dark:text-white">Request Resources</h3>
+              </div>
+              
+              <form onSubmit={handleResourceSubmit} className="space-y-6">
+                <div>
+                  <label className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">
+                    Resource Type *
+                  </label>
+                  <Select value={resourceForm.resourceType} onValueChange={(value) => setResourceForm({ ...resourceForm, resourceType: value })}>
+                    <SelectTrigger>
+                      <SelectValue placeholder="Select resource type" />
+                    </SelectTrigger>
+                    <SelectContent>
+                      <SelectItem value="equipment">Equipment</SelectItem>
+                      <SelectItem value="software">Software</SelectItem>
+                      <SelectItem value="books">Books/Materials</SelectItem>
+                      <SelectItem value="workspace">Workspace</SelectItem>
+                      <SelectItem value="tools">Tools</SelectItem>
+                      <SelectItem value="other">Other</SelectItem>
+                    </SelectContent>
+                  </Select>
+                </div>
+
+                <div>
+                  <label className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">
+                    Specific Resource *
+                  </label>
+                  <Input
+                    type="text"
+                    placeholder="Describe the specific resource you need"
+                    value={resourceForm.specificResource}
+                    onChange={(e) => setResourceForm({ ...resourceForm, specificResource: e.target.value })}
+                    required
+                  />
+                </div>
+
+                <div>
+                  <label className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">
+                    Purpose *
+                  </label>
+                  <Textarea
+                    placeholder="Explain how you plan to use this resource for your project"
+                    value={resourceForm.purpose}
+                    onChange={(e) => setResourceForm({ ...resourceForm, purpose: e.target.value })}
+                    required
+                  />
+                </div>
+
+                <div>
+                  <label className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">
+                    Timeline *
+                  </label>
+                  <Select value={resourceForm.timeline} onValueChange={(value) => setResourceForm({ ...resourceForm, timeline: value })}>
+                    <SelectTrigger>
+                      <SelectValue placeholder="When do you need this?" />
+                    </SelectTrigger>
+                    <SelectContent>
+                      <SelectItem value="immediately">Immediately</SelectItem>
+                      <SelectItem value="within-week">Within a week</SelectItem>
+                      <SelectItem value="within-month">Within a month</SelectItem>
+                      <SelectItem value="flexible">Flexible timeline</SelectItem>
+                    </SelectContent>
+                  </Select>
+                </div>
+
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                  <div>
+                    <label className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">
+                      Your Name *
+                    </label>
+                    <Input
+                      type="text"
+                      placeholder="Full Name"
+                      value={resourceForm.name}
+                      onChange={(e) => setResourceForm({ ...resourceForm, name: e.target.value })}
+                      required
+                    />
+                  </div>
+                  <div>
+                    <label className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">
+                      Email *
+                    </label>
+                    <Input
+                      type="email"
+                      placeholder="Email Address"
+                      value={resourceForm.email}
+                      onChange={(e) => setResourceForm({ ...resourceForm, email: e.target.value })}
+                      required
+                    />
+                  </div>
+                </div>
+
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                  <div>
+                    <label className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">
+                      Branch *
+                    </label>
+                    <Select value={resourceForm.branch} onValueChange={(value) => setResourceForm({ ...resourceForm, branch: value })}>
+                      <SelectTrigger>
+                        <SelectValue placeholder="Select your branch" />
+                      </SelectTrigger>
+                      <SelectContent>
+                        <SelectItem value="computer">Computer Engineering</SelectItem>
+                        <SelectItem value="it">Information Technology</SelectItem>
+                        <SelectItem value="electronics">Electronics & Communication</SelectItem>
+                        <SelectItem value="mechanical">Mechanical Engineering</SelectItem>
+                        <SelectItem value="civil">Civil Engineering</SelectItem>
+                        <SelectItem value="aiml">AI & Machine Learning</SelectItem>
+                        <SelectItem value="aids">AI & Data Science</SelectItem>
+                      </SelectContent>
+                    </Select>
+                  </div>
+                  <div>
+                    <label className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">
+                      Year *
+                    </label>
+                    <Select value={resourceForm.year} onValueChange={(value) => setResourceForm({ ...resourceForm, year: value })}>
+                      <SelectTrigger>
+                        <SelectValue placeholder="Select your year" />
+                      </SelectTrigger>
+                      <SelectContent>
+                        <SelectItem value="FE">First Year (FE)</SelectItem>
+                        <SelectItem value="SE">Second Year (SE)</SelectItem>
+                        <SelectItem value="TE">Third Year (TE)</SelectItem>
+                        <SelectItem value="BE">Final Year (BE)</SelectItem>
+                      </SelectContent>
+                    </Select>
+                  </div>
+                </div>
+                
+                <Button 
+                  type="submit" 
+                  className="w-full" 
+                  disabled={resourceMutation.isPending}
+                >
+                  {resourceMutation.isPending ? "Submitting..." : "Request Resource"}
+                </Button>
+              </form>
+            </motion.div>
           </div>
         </div>
       </section>

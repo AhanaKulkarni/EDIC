@@ -41,6 +41,19 @@ export const mentorshipRequests = pgTable("mentorship_requests", {
   createdAt: timestamp("created_at").defaultNow(),
 });
 
+export const resourceRequests = pgTable("resource_requests", {
+  id: serial("id").primaryKey(),
+  resourceType: text("resource_type").notNull(),
+  specificResource: text("specific_resource").notNull(),
+  purpose: text("purpose").notNull(),
+  timeline: text("timeline").notNull(),
+  name: text("name").notNull(),
+  email: text("email").notNull(),
+  branch: text("branch").notNull(),
+  year: text("year").notNull(),
+  createdAt: timestamp("created_at").defaultNow(),
+});
+
 export const insertUserSchema = createInsertSchema(users).pick({
   username: true,
   password: true,
@@ -61,6 +74,11 @@ export const insertMentorshipRequestSchema = createInsertSchema(mentorshipReques
   createdAt: true,
 });
 
+export const insertResourceRequestSchema = createInsertSchema(resourceRequests).omit({
+  id: true,
+  createdAt: true,
+});
+
 export type User = typeof users.$inferSelect;
 export type InsertUser = z.infer<typeof insertUserSchema>;
 export type Registration = typeof registrations.$inferSelect;
@@ -69,3 +87,5 @@ export type Idea = typeof ideas.$inferSelect;
 export type InsertIdea = z.infer<typeof insertIdeaSchema>;
 export type MentorshipRequest = typeof mentorshipRequests.$inferSelect;
 export type InsertMentorshipRequest = z.infer<typeof insertMentorshipRequestSchema>;
+export type ResourceRequest = typeof resourceRequests.$inferSelect;
+export type InsertResourceRequest = z.infer<typeof insertResourceRequestSchema>;
