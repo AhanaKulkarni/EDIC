@@ -14,6 +14,7 @@ import Startups from "@/pages/Startups";
 import StudentCorner from "@/pages/StudentCorner";
 import Register from "@/pages/Register";
 import Contact from "@/pages/Contact";
+import LabResources from "@/pages/LabResources";
 
 function Router() {
   return (
@@ -24,6 +25,7 @@ function Router() {
         <Route path="/team" component={Team} />
         <Route path="/events" component={Events} />
         <Route path="/startups" component={Startups} />
+        <Route path="/lab-resources" component={LabResources} />
         <Route path="/student-corner" component={StudentCorner} />
         <Route path="/register" component={Register} />
         <Route path="/contact" component={Contact} />
