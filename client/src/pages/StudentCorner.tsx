@@ -163,6 +163,34 @@ export default function StudentCorner() {
     mentorshipMutation.mutate(mentorshipForm);
   };
 
+  const handleRegistrationSubmit = (e: React.FormEvent) => {
+    e.preventDefault();
+    registrationMutation.mutate(registrationForm);
+  };
+
+  const handleInterestChange = (interest: string, checked: boolean) => {
+    if (checked) {
+      setRegistrationForm({
+        ...registrationForm,
+        interests: [...(registrationForm.interests || []), interest]
+      });
+    } else {
+      setRegistrationForm({
+        ...registrationForm,
+        interests: (registrationForm.interests || []).filter(i => i !== interest)
+      });
+    }
+  };
+
+  const interests = [
+    "Technology",
+    "Healthcare", 
+    "Education",
+    "Environment",
+    "Fintech",
+    "E-commerce"
+  ];
+
   return (
     <div className="min-h-screen">
       {/* Header */}
@@ -190,7 +218,7 @@ export default function StudentCorner() {
       {/* Forms Section */}
       <section className="py-20 bg-white dark:bg-gray-900">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 mb-16">
+          <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 mb-16">
             {/* Submit Idea Form */}
             <motion.div
               initial={{ opacity: 0, x: -20 }}
@@ -400,6 +428,135 @@ export default function StudentCorner() {
                   disabled={mentorshipMutation.isPending}
                 >
                   {mentorshipMutation.isPending ? "Submitting..." : "Request Mentorship"}
+                </Button>
+              </form>
+            </motion.div>
+
+            {/* Register for EDIC Form */}
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, delay: 0.2 }}
+              viewport={{ once: true }}
+              className="gradient-card rounded-2xl p-8 border border-gray-200 dark:border-gray-600"
+            >
+              <div className="flex items-center space-x-3 mb-6">
+                <div className="bg-primary/10 text-primary p-3 rounded-lg">
+                  <UserPlus className="h-6 w-6" />
+                </div>
+                <h3 className="text-2xl font-bold text-gray-900 dark:text-white">Join EDIC</h3>
+              </div>
+              
+              <form onSubmit={handleRegistrationSubmit} className="space-y-6">
+                <div>
+                  <label className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">
+                    Full Name *
+                  </label>
+                  <Input
+                    type="text"
+                    placeholder="Enter your full name"
+                    value={registrationForm.name}
+                    onChange={(e) => setRegistrationForm({ ...registrationForm, name: e.target.value })}
+                    required
+                  />
+                </div>
+                
+                <div>
+                  <label className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">
+                    Email *
+                  </label>
+                  <Input
+                    type="email"
+                    placeholder="Email Address"
+                    value={registrationForm.email}
+                    onChange={(e) => setRegistrationForm({ ...registrationForm, email: e.target.value })}
+                    required
+                  />
+                </div>
+                
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                  <div>
+                    <label className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">
+                      Branch *
+                    </label>
+                    <Select value={registrationForm.branch} onValueChange={(value) => setRegistrationForm({ ...registrationForm, branch: value })}>
+                      <SelectTrigger>
+                        <SelectValue placeholder="Select Branch" />
+                      </SelectTrigger>
+                      <SelectContent>
+                        <SelectItem value="computer">Computer Engineering</SelectItem>
+                        <SelectItem value="electronics">Electronics Engineering</SelectItem>
+                        <SelectItem value="mechanical">Mechanical Engineering</SelectItem>
+                        <SelectItem value="it">Information Technology</SelectItem>
+                        <SelectItem value="civil">Civil Engineering</SelectItem>
+                      </SelectContent>
+                    </Select>
+                  </div>
+                  <div>
+                    <label className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">
+                      Year *
+                    </label>
+                    <Select value={registrationForm.year} onValueChange={(value) => setRegistrationForm({ ...registrationForm, year: value })}>
+                      <SelectTrigger>
+                        <SelectValue placeholder="Select Year" />
+                      </SelectTrigger>
+                      <SelectContent>
+                        <SelectItem value="first">First Year</SelectItem>
+                        <SelectItem value="second">Second Year</SelectItem>
+                        <SelectItem value="third">Third Year</SelectItem>
+                        <SelectItem value="final">Final Year</SelectItem>
+                      </SelectContent>
+                    </Select>
+                  </div>
+                </div>
+
+                <div>
+                  <label className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">
+                    Phone Number
+                  </label>
+                  <Input
+                    type="tel"
+                    placeholder="Phone Number"
+                    value={registrationForm.phone}
+                    onChange={(e) => setRegistrationForm({ ...registrationForm, phone: e.target.value })}
+                  />
+                </div>
+
+                <div>
+                  <label className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">
+                    Why join EDIC?
+                  </label>
+                  <Textarea
+                    rows={3}
+                    placeholder="Tell us your entrepreneurial goals"
+                    value={registrationForm.reason}
+                    onChange={(e) => setRegistrationForm({ ...registrationForm, reason: e.target.value })}
+                  />
+                </div>
+
+                <div>
+                  <label className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">
+                    Interests
+                  </label>
+                  <div className="grid grid-cols-2 gap-3 mt-3">
+                    {interests.map((interest) => (
+                      <label key={interest} className="flex items-center space-x-2">
+                        <Checkbox
+                          checked={(registrationForm.interests || []).includes(interest)}
+                          onCheckedChange={(checked) => handleInterestChange(interest, checked as boolean)}
+                        />
+                        <span className="text-sm text-gray-700 dark:text-gray-300">{interest}</span>
+                      </label>
+                    ))}
+                  </div>
+                </div>
+                
+                <Button 
+                  type="submit" 
+                  className="w-full" 
+                  disabled={registrationMutation.isPending}
+                >
+                  {registrationMutation.isPending ? "Registering..." : "Join EDIC Now"}
                 </Button>
               </form>
             </motion.div>
