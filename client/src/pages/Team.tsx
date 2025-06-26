@@ -63,92 +63,152 @@ const facultyCoordinators = [
 
 const coreTeam = [
   {
-    name: "Arya Reddy",
-    role: "CEO",
-    image: "https://images.unsplash.com/photo-1494790108755-2616b612b1fd?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=60&h=60&face",
-    linkedin: "#"
-  },
-  {
-    name: "Ashutosh Pal",
-    role: "Technical Head",
+    name: "Ayush Pardeshi",
+    role: "Chief Executive Officer",
+    year: "TE",
+    branch: "E&CS",
+    division: "A",
+    rollNo: "2",
     image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=60&h=60&face",
     linkedin: "#"
   },
   {
-    name: "Priya Mehta",
-    role: "Creative Head",
-    image: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=60&h=60&face",
-    linkedin: "#"
-  },
-  {
-    name: "Rohan Gupta",
-    role: "Marketing Head",
-    image: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=60&h=60&face",
-    linkedin: "#"
-  },
-  {
-    name: "Anisha Sharma",
-    role: "Events Head",
-    image: "https://images.unsplash.com/photo-1534528741775-53994a69daeb?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=60&h=60&face",
-    linkedin: "#"
-  },
-  {
-    name: "Karan Singh",
-    role: "Operations Head",
-    image: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=60&h=60&face",
-    linkedin: "#"
-  },
-  {
-    name: "Sneha Patel",
-    role: "Content Manager",
-    image: "https://images.unsplash.com/photo-1544005313-94ddf0286df2?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=60&h=60&face",
-    linkedin: "#"
-  },
-  {
-    name: "Vivek Kumar",
-    role: "Finance Manager",
-    image: "https://images.unsplash.com/photo-1519345182560-3f2917c472ef?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=60&h=60&face",
-    linkedin: "#"
-  },
-  {
-    name: "Riya Jain",
-    role: "Social Media Manager",
-    image: "https://images.unsplash.com/photo-1517841905240-472988babdf9?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=60&h=60&face",
-    linkedin: "#"
-  },
-  {
-    name: "Aditya Verma",
-    role: "PR Manager",
-    image: "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=60&h=60&face",
-    linkedin: "#"
-  },
-  {
-    name: "Kavya Reddy",
-    role: "Research Manager",
+    name: "Ahana Kulkarni",
+    role: "Chief Technology Officer",
+    year: "TE",
+    branch: "AI&DS",
+    division: "A",
+    rollNo: "41",
     image: "https://images.unsplash.com/photo-1494790108755-2616b612b1fd?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=60&h=60&face",
     linkedin: "#"
   },
   {
-    name: "Rahul Desai",
-    role: "Outreach Manager",
+    name: "Bhummi Girnara",
+    role: "Chief Operating Officer",
+    year: "TE",
+    branch: "AI&DS",
+    division: "A",
+    rollNo: "19",
+    image: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=60&h=60&face",
+    linkedin: "#"
+  },
+  {
+    name: "Khushal Satyapal",
+    role: "Chief Marketing Officer",
+    year: "TE",
+    branch: "EXTC",
+    division: "B",
+    rollNo: "16",
+    image: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=60&h=60&face",
+    linkedin: "#"
+  },
+  {
+    name: "Yash Khatri",
+    role: "Chairperson",
+    year: "SE",
+    branch: "COMP",
+    division: "B",
+    rollNo: "17",
+    image: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=60&h=60&face",
+    linkedin: "#"
+  },
+  {
+    name: "Anushka Yadav",
+    role: "Vice-Chairperson",
+    year: "TE",
+    branch: "COMP",
+    division: "C",
+    rollNo: "53",
+    image: "https://images.unsplash.com/photo-1534528741775-53994a69daeb?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=60&h=60&face",
+    linkedin: "#"
+  },
+  {
+    name: "Krish Jain",
+    role: "Outreach Head",
+    year: "FE",
+    branch: "COMP",
+    division: "A",
+    rollNo: "57",
     image: "https://images.unsplash.com/photo-1463453091185-61582044d556?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=60&h=60&face",
     linkedin: "#"
   },
   {
-    name: "Meera Shah",
-    role: "Design Manager",
+    name: "Raj Mane",
+    role: "Tech Lead",
+    year: "FE",
+    branch: "COMP",
+    division: "B",
+    rollNo: "29",
+    image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=60&h=60&face",
+    linkedin: "#"
+  },
+  {
+    name: "Ansh Singh",
+    role: "Creative Head",
+    year: "SE",
+    branch: "ECS",
+    division: "NA",
+    rollNo: "48",
+    image: "https://images.unsplash.com/photo-1519345182560-3f2917c472ef?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=60&h=60&face",
+    linkedin: "#"
+  },
+  {
+    name: "Rashi Bedse",
+    role: "Social Media Manager",
+    year: "TE",
+    branch: "COMP",
+    division: "A",
+    rollNo: "13",
+    image: "https://images.unsplash.com/photo-1517841905240-472988babdf9?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=60&h=60&face",
+    linkedin: "#"
+  },
+  {
+    name: "Sayyam Lohade",
+    role: "Secretary",
+    year: "SE",
+    branch: "COMP",
+    division: "B",
+    rollNo: "25",
+    image: "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=60&h=60&face",
+    linkedin: "#"
+  },
+  {
+    name: "Nidhi Dilipkumar Shukla",
+    role: "Event Manager",
+    year: "SE",
+    branch: "AI & ML",
+    division: "C",
+    rollNo: "21",
+    image: "https://images.unsplash.com/photo-1544005313-94ddf0286df2?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=60&h=60&face",
+    linkedin: "#"
+  },
+  {
+    name: "Tanvi Prakash Jabare",
+    role: "Publication Head",
+    year: "SE",
+    branch: "ECS",
+    division: "N/A",
+    rollNo: "20",
     image: "https://images.unsplash.com/photo-1509967419530-da38b4704bc6?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=60&h=60&face",
     linkedin: "#"
   },
   {
-    name: "Sameer Khan",
-    role: "Logistics Manager",
+    name: "Hredey Chaand",
+    role: "PR Head",
+    year: "SE",
+    branch: "COMP",
+    division: "A",
+    rollNo: "10",
     image: "https://images.unsplash.com/photo-1599566150163-29194dcaad36?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=60&h=60&face",
     linkedin: "#"
   },
   {
-    name: "Nikita Agarwal",
-    role: "Partnership Manager",
+    name: "Yash Yadav",
+    role: "Sponsorship Head",
+    year: "SE",
+    branch: "AIML",
+    division: "C",
+    rollNo: "63",
     image: "https://images.unsplash.com/photo-1485875437342-9b39470b3d95?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=60&h=60&face",
     linkedin: "#"
   }
@@ -291,8 +351,11 @@ export default function Team() {
                 <h3 className="text-lg font-bold text-gray-900 dark:text-white mb-2">
                   {member.name}
                 </h3>
-                <p className="text-blue-600 dark:text-blue-400 font-medium mb-4">
+                <p className="text-blue-600 dark:text-blue-400 font-medium mb-2">
                   {member.role}
+                </p>
+                <p className="text-gray-600 dark:text-gray-300 text-sm mb-4">
+                  {member.year} {member.branch} - Div {member.division} | Roll No: {member.rollNo}
                 </p>
                 <a
                   href={member.linkedin}
