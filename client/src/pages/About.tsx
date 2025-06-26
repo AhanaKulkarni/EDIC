@@ -1,5 +1,7 @@
 import { motion } from "framer-motion";
 import { Eye, Rocket, TrendingUp, Users, Calendar, Award } from "lucide-react";
+import sukrutiImage from "@assets/Screenshot 2025-06-26 105927_1750923638170.png";
+import vinitImage from "@assets/vinitdongre_1750924162874.jpg";
 
 export default function About() {
   return (
@@ -125,7 +127,7 @@ export default function About() {
             >
               <div className="flex items-center space-x-4 mb-6">
                 <img
-                  src="attached_assets/Screenshot 2025-06-26 105927_1750923638170.png"
+                  src={sukrutiImage}
                   alt="Sukruti Kaulgud"
                   className="w-20 h-20 rounded-full object-cover"
                 />
@@ -150,7 +152,7 @@ export default function About() {
             >
               <div className="flex items-center space-x-4 mb-6">
                 <img
-                  src="attached_assets/vinitdongre_1750924162874.jpg"
+                  src={vinitImage}
                   alt="Dr. Vinitkumar Dongre"
                   className="w-20 h-20 rounded-full object-cover"
                 />
