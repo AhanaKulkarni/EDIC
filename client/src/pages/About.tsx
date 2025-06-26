@@ -125,7 +125,7 @@ export default function About() {
             >
               <div className="flex items-center space-x-4 mb-6">
                 <img
-                  src="/attached_assets/Screenshot 2025-06-26 105927_1750923638170.png"
+                  src="attached_assets/Screenshot 2025-06-26 105927_1750923638170.png"
                   alt="Sukruti Kaulgud"
                   className="w-20 h-20 rounded-full object-cover"
                 />
@@ -148,10 +148,17 @@ export default function About() {
               viewport={{ once: true }}
               className="bg-white dark:bg-gray-900 rounded-xl shadow-lg p-8 border border-gray-200 dark:border-gray-700"
             >
-              <div className="mb-6">
-                <h4 className="text-xl font-bold text-gray-900 dark:text-white">Dr. Vinitkumar Dongre</h4>
-                <p className="text-primary font-medium">Dean R&D</p>
-                <p className="text-gray-600 dark:text-gray-300 text-sm">TCET</p>
+              <div className="flex items-center space-x-4 mb-6">
+                <img
+                  src="attached_assets/vinitdongre_1750924162874.jpg"
+                  alt="Dr. Vinitkumar Dongre"
+                  className="w-20 h-20 rounded-full object-cover"
+                />
+                <div>
+                  <h4 className="text-xl font-bold text-gray-900 dark:text-white">Dr. Vinitkumar Dongre</h4>
+                  <p className="text-primary font-medium">Dean R&D</p>
+                  <p className="text-gray-600 dark:text-gray-300 text-sm">TCET</p>
+                </div>
               </div>
               <blockquote className="text-gray-600 dark:text-gray-300 italic">
                 "EDIC represents our commitment to nurturing entrepreneurial minds. We believe that education should empower students to become job creators, not just job seekers."

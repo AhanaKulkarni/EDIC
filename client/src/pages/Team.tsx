@@ -99,12 +99,13 @@ const facultyCoordinators = [
     name: "Sukruti Kaulgud",
     role: "Faculty Head, EDIC",
     department: "Department of Computer Engineering",
-    image: "/attached_assets/Screenshot 2025-06-26 105927_1750923638170.png"
+    image: "attached_assets/Screenshot 2025-06-26 105927_1750923638170.png"
   },
   {
     name: "Dr. Vinitkumar Dongre",
     role: "Dean R&D",
-    department: "TCET"
+    department: "TCET",
+    image: "attached_assets/vinitdongre_1750924162874.jpg"
   }
 ];
 
