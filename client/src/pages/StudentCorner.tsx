@@ -1,13 +1,14 @@
 import { motion } from "framer-motion";
 import { useState } from "react";
-import { Lightbulb, UserRoundCheck, BookOpen, FileText, Video, Link as LinkIcon, ChartLine } from "lucide-react";
+import { Lightbulb, UserRoundCheck, BookOpen, FileText, Video, Link as LinkIcon, ChartLine, UserPlus } from "lucide-react";
+import { Checkbox } from "@/components/ui/checkbox";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 import { useToast } from "@/hooks/use-toast";
 import { useMutation } from "@tanstack/react-query";
-import { api, type IdeaData, type MentorshipData } from "@/lib/api";
+import { api, type IdeaData, type MentorshipData, type RegistrationData } from "@/lib/api";
 
 const resources = [
   {
@@ -67,6 +68,16 @@ export default function StudentCorner() {
     phone: ""
   });
 
+  const [registrationForm, setRegistrationForm] = useState<RegistrationData>({
+    name: "",
+    email: "",
+    branch: "",
+    year: "",
+    phone: "",
+    reason: "",
+    interests: []
+  });
+
   const ideaMutation = useMutation({
     mutationFn: api.submitIdea,
     onSuccess: () => {
@@ -111,6 +122,32 @@ export default function StudentCorner() {
       toast({
         title: "Error",
         description: "Failed to submit your mentorship request. Please try again.",
+        variant: "destructive",
+      });
+    }
+  });
+
+  const registrationMutation = useMutation({
+    mutationFn: api.register,
+    onSuccess: () => {
+      toast({
+        title: "Registration Successful!",
+        description: "Welcome to TCET EDIC! We'll contact you soon with next steps.",
+      });
+      setRegistrationForm({
+        name: "",
+        email: "",
+        branch: "",
+        year: "",
+        phone: "",
+        reason: "",
+        interests: []
+      });
+    },
+    onError: () => {
+      toast({
+        title: "Registration Failed",
+        description: "Failed to submit your registration. Please try again.",
         variant: "destructive",
       });
     }

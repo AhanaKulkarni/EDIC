@@ -7,8 +7,20 @@ export default function Home() {
   return (
     <div className="min-h-screen">
       {/* Hero Section */}
-      <section className="relative min-h-screen flex items-center bg-gradient-to-br from-blue-50 to-white dark:from-gray-900 dark:to-gray-800">
-        <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-20">
+      <section className="relative min-h-screen flex items-center bg-gradient-to-br from-blue-50 to-white dark:from-gray-900 dark:to-gray-800 entrepreneurship-bg">
+        {/* Floating Background Icons */}
+        <div className="floating-icons">
+          <div className="floating-icon">💡</div>
+          <div className="floating-icon">🚀</div>
+          <div className="floating-icon">💼</div>
+          <div className="floating-icon">📈</div>
+          <div className="floating-icon">🎯</div>
+          <div className="floating-icon">🌟</div>
+          <div className="floating-icon">⚡</div>
+          <div className="floating-icon">🔥</div>
+        </div>
+        
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-20 relative z-10">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <motion.div
               initial={{ opacity: 0, y: 20 }}
@@ -16,17 +28,18 @@ export default function Home() {
               transition={{ duration: 0.6 }}
               className="text-center lg:text-left"
             >
-              <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-gray-900 dark:text-white mb-6 leading-tight">
-                Empowering{" "}
-                <span className="text-primary">Innovation</span> at TCET
+              <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold mb-6 leading-tight">
+                <span className="gradient-text">Empowering</span>{" "}
+                <span className="gradient-text-secondary">Innovation</span>{" "}
+                <span className="text-gray-900 dark:text-white">at TCET</span>
               </h1>
               <motion.div
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
                 transition={{ duration: 0.8, delay: 0.2 }}
-                className="text-xl text-gray-600 dark:text-gray-300 mb-8"
+                className="text-xl mb-8"
               >
-                <p className="animate-pulse">
+                <p className="gradient-text-secondary font-semibold">
                   Building the next generation of entrepreneurs and innovators
                 </p>
               </motion.div>
