@@ -138,7 +138,7 @@ export default function Team() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
-            className="text-4xl sm:text-5xl font-bold text-gray-900 dark:text-white mb-6"
+            className="text-4xl sm:text-5xl font-bold gradient-text mb-6"
           >
             Our Team
           </motion.h1>
@@ -161,7 +161,7 @@ export default function Team() {
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
             viewport={{ once: true }}
-            className="text-3xl font-bold text-gray-900 dark:text-white mb-12 text-center"
+            className="text-3xl font-bold gradient-text-secondary mb-12 text-center"
           >
             Core Committee
           </motion.h2>
@@ -203,7 +203,7 @@ export default function Team() {
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
             viewport={{ once: true }}
-            className="text-3xl font-bold text-gray-900 dark:text-white mb-12 text-center"
+            className="text-3xl font-bold gradient-text-secondary mb-12 text-center"
           >
             Faculty Coordinators
           </motion.h2>
@@ -218,21 +218,14 @@ export default function Team() {
                 viewport={{ once: true }}
                 className="bg-white dark:bg-gray-900 rounded-xl shadow-lg p-8 border border-gray-200 dark:border-gray-700"
               >
-                <div className="flex items-center space-x-4">
-                  <img
-                    src={faculty.image}
-                    alt={faculty.name}
-                    className="w-16 h-16 rounded-full object-cover"
-                  />
-                  <div>
-                    <h3 className="text-lg font-bold text-gray-900 dark:text-white">
-                      {faculty.name}
-                    </h3>
-                    <p className="text-primary">{faculty.role}</p>
-                    <p className="text-gray-600 dark:text-gray-300 text-sm">
-                      {faculty.department}
-                    </p>
-                  </div>
+                <div>
+                  <h3 className="text-lg font-bold text-gray-900 dark:text-white">
+                    {faculty.name}
+                  </h3>
+                  <p className="text-primary">{faculty.role}</p>
+                  <p className="text-gray-600 dark:text-gray-300 text-sm">
+                    {faculty.department}
+                  </p>
                 </div>
               </motion.div>
             ))}
@@ -248,7 +241,7 @@ export default function Team() {
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
             viewport={{ once: true }}
-            className="text-3xl font-bold text-gray-900 dark:text-white mb-12 text-center"
+            className="text-3xl font-bold gradient-text-secondary mb-12 text-center"
           >
             Alumni Success Stories
           </motion.h2>
