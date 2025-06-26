@@ -257,37 +257,64 @@ const labData: Lab[] = [
     ]
   },
   {
-    id: "ecs-lab-1",
-    name: "Electronics & Communication Lab",
-    floor: "Third Floor",
+    id: "extc-lab-1",
+    name: "EXTC Lab 1 - Room 103",
+    floor: "1st Floor",
     building: "",
     department: "",
     equipment: [
       {
-        id: "ecs-1",
-        name: "Network Analyzer",
-        description: "Analyzes electrical networks and RF/microwave components",
-        quantity: 2,
+        id: "extc-1-1",
+        name: "Laboratory Equipment",
+        description: "Electronics and Communication laboratory equipment",
+        quantity: 1,
         status: "Available"
-      },
+      }
+    ]
+  },
+  {
+    id: "extc-lab-2-3",
+    name: "EXTC Lab 2-3 - Room 104-105",
+    floor: "1st Floor",
+    building: "",
+    department: "",
+    equipment: [
       {
-        id: "ecs-2",
-        name: "Signal Generator",
-        description: "Generates various electrical signals for testing circuits",
-        quantity: 6,
+        id: "extc-2-3-1",
+        name: "Laboratory Equipment",
+        description: "Electronics and Communication laboratory equipment",
+        quantity: 1,
         status: "Available"
-      },
+      }
+    ]
+  },
+  {
+    id: "extc-lab-8",
+    name: "EXTC Lab 8 - Room 213",
+    floor: "2nd Floor",
+    building: "",
+    department: "",
+    equipment: [
       {
-        id: "ecs-3",
-        name: "Digital Storage Oscilloscope",
-        description: "Advanced oscilloscope with digital signal processing capabilities",
-        quantity: 8,
+        id: "extc-8-1",
+        name: "Laboratory Equipment",
+        description: "Electronics and Communication laboratory equipment",
+        quantity: 1,
         status: "Available"
-      },
+      }
+    ]
+  },
+  {
+    id: "extc-lab-9",
+    name: "EXTC Lab 9 - Room 214",
+    floor: "2nd Floor",
+    building: "",
+    department: "",
+    equipment: [
       {
-        id: "ecs-4",
-        name: "PCB Prototyping Machine",
-        description: "Creates printed circuit board prototypes for testing",
+        id: "extc-9-1",
+        name: "Laboratory Equipment",
+        description: "Electronics and Communication laboratory equipment",
         quantity: 1,
         status: "Available"
       }

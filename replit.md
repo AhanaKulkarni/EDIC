@@ -107,6 +107,7 @@ Changelog:
 - June 26, 2025. Added comprehensive Lab Resources system with 17+ laboratories covering all engineering departments, equipment directory with detailed descriptions, and invoice generation system with faculty signatures for equipment requests
 - June 26, 2025. Updated Chemistry Laboratory with accurate equipment inventory including Distillation Assembly, Oil Bath with Magnetic Stirrer, Weighing Balance, Oven, Ultrasound Bath, UV Apparatus, and Colorimeter with correct quantities
 - June 26, 2025. Updated Computer Programming Labs with accurate equipment counts: Room 216 with 70 PCs, Room 315 with 28 PCs plus projector and screen
+- June 26, 2025. Updated EXTC (Electronics & Communication) labs with accurate room numbers and floors: Lab 1 (Room 103), Lab 2-3 (Room 104-105) on 1st floor, Lab 8 (Room 213), Lab 9 (Room 214) on 2nd floor. Removed all building and department specifications for cleaner interface
 
 ## User Preferences
 
