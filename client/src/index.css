@@ -96,47 +96,39 @@
   }
 
   .gradient-hero {
-    background: linear-gradient(135deg, #1e40af 0%, #3b82f6 25%, #06b6d4 50%, #8b5cf6 75%, #ec4899 100%);
+    background: #3b82f6;
   }
 
   .gradient-card {
-    background: linear-gradient(145deg, #ffffff 0%, #f8fafc 50%, #e2e8f0 100%);
-    border: 1px solid rgba(59, 130, 246, 0.1);
+    background: #ffffff;
+    border: 1px solid #e5e7eb;
   }
 
   .dark .gradient-card {
-    background: linear-gradient(145deg, #1e293b 0%, #334155 50%, #475569 100%);
-    border: 1px solid rgba(59, 130, 246, 0.2);
+    background: #1f2937;
+    border: 1px solid #374151;
   }
 
-  .colorful-card {
-    background: linear-gradient(145deg, #fef7ff 0%, #f0f9ff 50%, #ecfeff 100%);
-    border: 2px solid;
-    border-image: linear-gradient(135deg, #3b82f6, #06b6d4, #8b5cf6) 1;
+  .subtle-card {
+    background: #f8fafc;
+    border: 1px solid #e2e8f0;
   }
 
-  .dark .colorful-card {
-    background: linear-gradient(145deg, #1e1b4b 0%, #0f172a 50%, #164e63 100%);
+  .dark .subtle-card {
+    background: #1e293b;
+    border: 1px solid #334155;
   }
 
   .gradient-text {
-    background: linear-gradient(135deg, #1e40af 0%, #3b82f6 30%, #06b6d4 60%, #8b5cf6 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
+    color: #1e40af;
   }
 
   .gradient-text-radial {
-    background: radial-gradient(ellipse at center, #1e40af 0%, #3b82f6 40%, #06b6d4 70%, #ffffff 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
+    color: #1e40af;
   }
 
   .gradient-text-secondary {
-    background: linear-gradient(135deg, #059669 0%, #0891b2 50%, #7c3aed 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    color: #0891b2;
     background-clip: text;
   }
 
