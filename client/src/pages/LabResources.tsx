@@ -313,12 +313,431 @@ const labData: Lab[] = [
         status: "Available"
       }
     ]
+  },
+  {
+    id: "it-lab-1",
+    name: "Information Technology Lab",
+    floor: "Third Floor",
+    building: "IT Building",
+    department: "Information Technology",
+    equipment: [
+      {
+        id: "it-1",
+        name: "Network Switches (Cisco)",
+        description: "Managed network switches for networking experiments",
+        quantity: 12,
+        status: "Available"
+      },
+      {
+        id: "it-2",
+        name: "Servers (Dell PowerEdge)",
+        description: "High-performance servers for database and web applications",
+        quantity: 4,
+        status: "Available"
+      },
+      {
+        id: "it-3",
+        name: "Virtual Reality Headsets",
+        description: "VR development and testing equipment for immersive applications",
+        quantity: 6,
+        status: "Available"
+      },
+      {
+        id: "it-4",
+        name: "GPU Workstations",
+        description: "High-end graphics processing units for AI/ML development",
+        quantity: 8,
+        status: "Available"
+      }
+    ]
+  },
+  {
+    id: "aids-lab-1",
+    name: "AI & Data Science Laboratory",
+    floor: "Fourth Floor",
+    building: "IT Building",
+    department: "AI & Data Science",
+    equipment: [
+      {
+        id: "aids-1",
+        name: "Deep Learning Workstations",
+        description: "NVIDIA RTX equipped systems for deep learning research",
+        quantity: 15,
+        status: "Available"
+      },
+      {
+        id: "aids-2",
+        name: "Data Analytics Software Suite",
+        description: "Licensed software including MATLAB, SAS, and R Studio",
+        quantity: 50,
+        status: "Available"
+      },
+      {
+        id: "aids-3",
+        name: "Edge Computing Devices",
+        description: "Raspberry Pi and Jetson Nano for edge AI deployment",
+        quantity: 20,
+        status: "Available"
+      },
+      {
+        id: "aids-4",
+        name: "High-Speed Data Storage",
+        description: "NAS systems for big data storage and processing",
+        quantity: 3,
+        status: "Available"
+      }
+    ]
+  },
+  {
+    id: "aiml-lab-1",
+    name: "AI & Machine Learning Lab",
+    floor: "Fourth Floor",
+    building: "Main Building",
+    department: "AI & Machine Learning",
+    equipment: [
+      {
+        id: "aiml-1",
+        name: "TensorFlow Development Environment",
+        description: "Pre-configured systems with TensorFlow and PyTorch frameworks",
+        quantity: 25,
+        status: "Available"
+      },
+      {
+        id: "aiml-2",
+        name: "Computer Vision Cameras",
+        description: "High-resolution cameras for computer vision projects",
+        quantity: 10,
+        status: "Available"
+      },
+      {
+        id: "aiml-3",
+        name: "Neural Network Accelerators",
+        description: "Specialized hardware for neural network computation",
+        quantity: 8,
+        status: "Available"
+      },
+      {
+        id: "aiml-4",
+        name: "Robotic Process Automation Tools",
+        description: "Software and hardware for RPA development and testing",
+        quantity: 12,
+        status: "Available"
+      }
+    ]
+  },
+  {
+    id: "iot-lab-1",
+    name: "Internet of Things Laboratory",
+    floor: "Second Floor",
+    building: "IT Building",
+    department: "Internet of Things",
+    equipment: [
+      {
+        id: "iot-1",
+        name: "IoT Development Kits",
+        description: "ESP32, Arduino, and NodeMCU for IoT prototyping",
+        quantity: 40,
+        status: "Available"
+      },
+      {
+        id: "iot-2",
+        name: "Sensor Modules",
+        description: "Various sensors for temperature, humidity, motion detection",
+        quantity: 100,
+        status: "Available"
+      },
+      {
+        id: "iot-3",
+        name: "LoRaWAN Gateway",
+        description: "Long-range wireless communication gateway for IoT networks",
+        quantity: 2,
+        status: "Available"
+      },
+      {
+        id: "iot-4",
+        name: "Cloud Platform Access",
+        description: "AWS IoT, Azure IoT Hub, and Google Cloud IoT subscriptions",
+        quantity: 1,
+        status: "Available"
+      }
+    ]
+  },
+  {
+    id: "env-lab-1",
+    name: "Environmental Engineering Lab",
+    floor: "Ground Floor",
+    building: "Civil Block",
+    department: "Civil Engineering",
+    equipment: [
+      {
+        id: "env-1",
+        name: "Water Quality Testing Kit",
+        description: "Complete kit for testing pH, DO, BOD, COD in water samples",
+        quantity: 8,
+        status: "Available"
+      },
+      {
+        id: "env-2",
+        name: "Air Quality Monitors",
+        description: "Digital monitors for measuring air pollution parameters",
+        quantity: 5,
+        status: "Available"
+      },
+      {
+        id: "env-3",
+        name: "Soil Testing Equipment",
+        description: "Tools for soil composition and contamination analysis",
+        quantity: 12,
+        status: "Available"
+      },
+      {
+        id: "env-4",
+        name: "Waste Treatment Models",
+        description: "Scale models for studying waste treatment processes",
+        quantity: 3,
+        status: "Available"
+      }
+    ]
+  },
+  {
+    id: "auto-lab-1",
+    name: "Automobile Engineering Lab",
+    floor: "Ground Floor",
+    building: "Workshop Building",
+    department: "Mechanical Engineering",
+    equipment: [
+      {
+        id: "auto-1",
+        name: "Engine Test Bed",
+        description: "Complete setup for testing internal combustion engines",
+        quantity: 2,
+        status: "Available"
+      },
+      {
+        id: "auto-2",
+        name: "Chassis Dynamometer",
+        description: "Equipment for testing vehicle performance and emissions",
+        quantity: 1,
+        status: "Maintenance"
+      },
+      {
+        id: "auto-3",
+        name: "Transmission Testing Unit",
+        description: "Setup for analyzing gear box and transmission systems",
+        quantity: 3,
+        status: "Available"
+      },
+      {
+        id: "auto-4",
+        name: "Brake Testing Equipment",
+        description: "Tools for testing and analyzing braking systems",
+        quantity: 4,
+        status: "Available"
+      }
+    ]
+  },
+  {
+    id: "thermal-lab-1",
+    name: "Thermal Engineering Laboratory",
+    floor: "First Floor",
+    building: "Workshop Building",
+    department: "Mechanical Engineering",
+    equipment: [
+      {
+        id: "thermal-1",
+        name: "Heat Exchanger Test Rig",
+        description: "Equipment for studying heat transfer in various heat exchangers",
+        quantity: 3,
+        status: "Available"
+      },
+      {
+        id: "thermal-2",
+        name: "Refrigeration Test Setup",
+        description: "Complete refrigeration cycle demonstration and testing unit",
+        quantity: 2,
+        status: "Available"
+      },
+      {
+        id: "thermal-3",
+        name: "Boiler Model",
+        description: "Working model of steam boiler for thermodynamics studies",
+        quantity: 1,
+        status: "Available"
+      },
+      {
+        id: "thermal-4",
+        name: "Gas Turbine Simulator",
+        description: "Computer-controlled gas turbine performance simulator",
+        quantity: 1,
+        status: "Available"
+      }
+    ]
+  },
+  {
+    id: "vlsi-lab-1",
+    name: "VLSI Design Laboratory",
+    floor: "Third Floor",
+    building: "Main Building",
+    department: "Electronics & Communication",
+    equipment: [
+      {
+        id: "vlsi-1",
+        name: "FPGA Development Boards",
+        description: "Xilinx and Intel FPGA boards for digital design projects",
+        quantity: 20,
+        status: "Available"
+      },
+      {
+        id: "vlsi-2",
+        name: "IC Design Software",
+        description: "Cadence, Synopsys, and Mentor Graphics EDA tools",
+        quantity: 30,
+        status: "Available"
+      },
+      {
+        id: "vlsi-3",
+        name: "Logic Analyzers",
+        description: "High-speed logic analyzers for digital circuit debugging",
+        quantity: 8,
+        status: "Available"
+      },
+      {
+        id: "vlsi-4",
+        name: "Semiconductor Parameter Analyzer",
+        description: "Equipment for characterizing semiconductor devices",
+        quantity: 2,
+        status: "Available"
+      }
+    ]
+  },
+  {
+    id: "micro-lab-1",
+    name: "Microprocessor Laboratory",
+    floor: "Second Floor",
+    building: "Main Building",
+    department: "Electronics & Communication",
+    equipment: [
+      {
+        id: "micro-1",
+        name: "Microprocessor Trainer Kits",
+        description: "8085, 8086, and ARM development trainer kits",
+        quantity: 30,
+        status: "Available"
+      },
+      {
+        id: "micro-2",
+        name: "Embedded Development Boards",
+        description: "Various microcontroller development platforms",
+        quantity: 25,
+        status: "Available"
+      },
+      {
+        id: "micro-3",
+        name: "In-Circuit Emulators",
+        description: "Tools for real-time debugging of embedded systems",
+        quantity: 10,
+        status: "Available"
+      },
+      {
+        id: "micro-4",
+        name: "Digital Signal Processors",
+        description: "DSP development kits for signal processing applications",
+        quantity: 15,
+        status: "Available"
+      }
+    ]
+  },
+  {
+    id: "survey-lab-1",
+    name: "Surveying Laboratory",
+    floor: "Ground Floor",
+    building: "Civil Block",
+    department: "Civil Engineering",
+    equipment: [
+      {
+        id: "survey-1",
+        name: "Total Station",
+        description: "Electronic surveying instrument for precise measurements",
+        quantity: 6,
+        status: "Available"
+      },
+      {
+        id: "survey-2",
+        name: "GPS Equipment",
+        description: "Global positioning system for accurate location mapping",
+        quantity: 4,
+        status: "Available"
+      },
+      {
+        id: "survey-3",
+        name: "Theodolite",
+        description: "Precision instrument for measuring angles in surveying",
+        quantity: 12,
+        status: "Available"
+      },
+      {
+        id: "survey-4",
+        name: "Digital Level",
+        description: "Electronic leveling instrument for height measurements",
+        quantity: 8,
+        status: "Available"
+      }
+    ]
+  },
+  {
+    id: "struct-lab-1",
+    name: "Structural Engineering Lab",
+    floor: "First Floor",
+    building: "Civil Block",
+    department: "Civil Engineering",
+    equipment: [
+      {
+        id: "struct-1",
+        name: "Universal Loading Frame",
+        description: "Testing frame for structural member testing under various loads",
+        quantity: 2,
+        status: "Available"
+      },
+      {
+        id: "struct-2",
+        name: "Beam Testing Machine",
+        description: "Equipment for testing flexural strength of concrete beams",
+        quantity: 1,
+        status: "Available"
+      },
+      {
+        id: "struct-3",
+        name: "Column Testing Setup",
+        description: "Machine for testing compressive strength of columns",
+        quantity: 1,
+        status: "Available"
+      },
+      {
+        id: "struct-4",
+        name: "Strain Gauge Data Logger",
+        description: "Digital system for recording strain measurements",
+        quantity: 5,
+        status: "Available"
+      }
+    ]
   }
 ];
 
 export default function LabResources() {
   const [openLabs, setOpenLabs] = useState<string[]>([]);
   const [selectedEquipment, setSelectedEquipment] = useState<Equipment[]>([]);
+  const [showRequestForm, setShowRequestForm] = useState(false);
+  const [showInvoice, setShowInvoice] = useState(false);
+  const [requestForm, setRequestForm] = useState({
+    name: "",
+    email: "",
+    branch: "",
+    year: "",
+    rollNo: "",
+    phone: "",
+    purpose: "",
+    timeline: ""
+  });
 
   const toggleLab = (labId: string) => {
     setOpenLabs(prev => 
@@ -335,6 +754,12 @@ export default function LabResources() {
 
   const removeFromSelection = (equipmentId: string) => {
     setSelectedEquipment(prev => prev.filter(eq => eq.id !== equipmentId));
+  };
+
+  const handleRequestSubmit = (e: React.FormEvent) => {
+    e.preventDefault();
+    if (selectedEquipment.length === 0) return;
+    setShowInvoice(true);
   };
 
   const getStatusColor = (status: string) => {
@@ -521,6 +946,7 @@ export default function LabResources() {
                       <Button 
                         className="w-full mt-4"
                         disabled={selectedEquipment.length === 0}
+                        onClick={() => setShowRequestForm(true)}
                       >
                         Create Resource Request
                       </Button>
@@ -532,6 +958,215 @@ export default function LabResources() {
           </div>
         </div>
       </section>
+
+      {/* Equipment Request Form Modal */}
+      {showRequestForm && (
+        <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50 p-4">
+          <motion.div
+            initial={{ opacity: 0, scale: 0.9 }}
+            animate={{ opacity: 1, scale: 1 }}
+            className="bg-white dark:bg-gray-900 rounded-lg shadow-2xl max-w-2xl w-full max-h-[90vh] overflow-auto"
+          >
+            <div className="p-6 border-b border-gray-200 dark:border-gray-700">
+              <h2 className="text-xl font-semibold text-gray-900 dark:text-white">Equipment Request Form</h2>
+              <p className="text-sm text-gray-600 dark:text-gray-400 mt-1">
+                Fill in your details to generate an equipment request invoice
+              </p>
+            </div>
+            
+            <form onSubmit={handleRequestSubmit} className="p-6 space-y-6">
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                <div>
+                  <label className="block text-sm font-medium text-gray-900 dark:text-white mb-2">
+                    Full Name *
+                  </label>
+                  <Input
+                    required
+                    value={requestForm.name}
+                    onChange={(e) => setRequestForm({ ...requestForm, name: e.target.value })}
+                    placeholder="Enter your full name"
+                  />
+                </div>
+                
+                <div>
+                  <label className="block text-sm font-medium text-gray-900 dark:text-white mb-2">
+                    Email Address *
+                  </label>
+                  <Input
+                    type="email"
+                    required
+                    value={requestForm.email}
+                    onChange={(e) => setRequestForm({ ...requestForm, email: e.target.value })}
+                    placeholder="your.email@tcetmumbai.in"
+                  />
+                </div>
+                
+                <div>
+                  <label className="block text-sm font-medium text-gray-900 dark:text-white mb-2">
+                    Branch *
+                  </label>
+                  <Select 
+                    value={requestForm.branch} 
+                    onValueChange={(value) => setRequestForm({ ...requestForm, branch: value })}
+                  >
+                    <SelectTrigger>
+                      <SelectValue placeholder="Select your branch" />
+                    </SelectTrigger>
+                    <SelectContent>
+                      <SelectItem value="Computer Engineering">Computer Engineering</SelectItem>
+                      <SelectItem value="Information Technology">Information Technology</SelectItem>
+                      <SelectItem value="Electronics & Communication">Electronics & Communication</SelectItem>
+                      <SelectItem value="Mechanical Engineering">Mechanical Engineering</SelectItem>
+                      <SelectItem value="Civil Engineering">Civil Engineering</SelectItem>
+                      <SelectItem value="AI & Data Science">AI & Data Science</SelectItem>
+                      <SelectItem value="AI & Machine Learning">AI & Machine Learning</SelectItem>
+                      <SelectItem value="IoT">Internet of Things</SelectItem>
+                      <SelectItem value="Biotechnology">Biotechnology</SelectItem>
+                    </SelectContent>
+                  </Select>
+                </div>
+                
+                <div>
+                  <label className="block text-sm font-medium text-gray-900 dark:text-white mb-2">
+                    Academic Year *
+                  </label>
+                  <Select 
+                    value={requestForm.year} 
+                    onValueChange={(value) => setRequestForm({ ...requestForm, year: value })}
+                  >
+                    <SelectTrigger>
+                      <SelectValue placeholder="Select your year" />
+                    </SelectTrigger>
+                    <SelectContent>
+                      <SelectItem value="FE">First Year (FE)</SelectItem>
+                      <SelectItem value="SE">Second Year (SE)</SelectItem>
+                      <SelectItem value="TE">Third Year (TE)</SelectItem>
+                      <SelectItem value="BE">Final Year (BE)</SelectItem>
+                    </SelectContent>
+                  </Select>
+                </div>
+                
+                <div>
+                  <label className="block text-sm font-medium text-gray-900 dark:text-white mb-2">
+                    Roll Number
+                  </label>
+                  <Input
+                    value={requestForm.rollNo}
+                    onChange={(e) => setRequestForm({ ...requestForm, rollNo: e.target.value })}
+                    placeholder="Enter your roll number"
+                  />
+                </div>
+                
+                <div>
+                  <label className="block text-sm font-medium text-gray-900 dark:text-white mb-2">
+                    Phone Number
+                  </label>
+                  <Input
+                    value={requestForm.phone}
+                    onChange={(e) => setRequestForm({ ...requestForm, phone: e.target.value })}
+                    placeholder="Enter your phone number"
+                  />
+                </div>
+              </div>
+              
+              <div>
+                <label className="block text-sm font-medium text-gray-900 dark:text-white mb-2">
+                  Timeline *
+                </label>
+                <Select 
+                  value={requestForm.timeline} 
+                  onValueChange={(value) => setRequestForm({ ...requestForm, timeline: value })}
+                >
+                  <SelectTrigger>
+                    <SelectValue placeholder="When do you need the equipment?" />
+                  </SelectTrigger>
+                  <SelectContent>
+                    <SelectItem value="Immediate (1-2 days)">Immediate (1-2 days)</SelectItem>
+                    <SelectItem value="This week">This week</SelectItem>
+                    <SelectItem value="Next week">Next week</SelectItem>
+                    <SelectItem value="Within 2 weeks">Within 2 weeks</SelectItem>
+                    <SelectItem value="Within a month">Within a month</SelectItem>
+                  </SelectContent>
+                </Select>
+              </div>
+              
+              <div>
+                <label className="block text-sm font-medium text-gray-900 dark:text-white mb-2">
+                  Purpose of Request *
+                </label>
+                <Textarea
+                  required
+                  value={requestForm.purpose}
+                  onChange={(e) => setRequestForm({ ...requestForm, purpose: e.target.value })}
+                  placeholder="Describe the purpose for which you need this equipment (project, research, assignment, etc.)"
+                  rows={4}
+                />
+              </div>
+              
+              <div>
+                <h4 className="text-sm font-medium text-gray-900 dark:text-white mb-2">
+                  Selected Equipment ({selectedEquipment.length} items)
+                </h4>
+                <div className="bg-gray-50 dark:bg-gray-800 rounded-lg p-3 max-h-32 overflow-y-auto">
+                  {selectedEquipment.map((equipment) => (
+                    <div key={equipment.id} className="text-sm text-gray-700 dark:text-gray-300 mb-1">
+                      • {equipment.name} - {(equipment as any).labName}
+                    </div>
+                  ))}
+                </div>
+              </div>
+              
+              <div className="flex justify-end space-x-3 pt-4 border-t border-gray-200 dark:border-gray-700">
+                <Button
+                  type="button"
+                  variant="outline"
+                  onClick={() => setShowRequestForm(false)}
+                >
+                  Cancel
+                </Button>
+                <Button
+                  type="submit"
+                  disabled={!requestForm.name || !requestForm.email || !requestForm.branch || !requestForm.year || !requestForm.timeline || !requestForm.purpose}
+                >
+                  Generate Invoice
+                </Button>
+              </div>
+            </form>
+          </motion.div>
+        </div>
+      )}
+
+      {/* Equipment Invoice Modal */}
+      {showInvoice && (
+        <EquipmentInvoice
+          equipment={selectedEquipment as any}
+          studentInfo={{
+            name: requestForm.name,
+            email: requestForm.email,
+            branch: requestForm.branch,
+            year: requestForm.year,
+            rollNo: requestForm.rollNo,
+            phone: requestForm.phone,
+          }}
+          purpose={requestForm.purpose}
+          timeline={requestForm.timeline}
+          onClose={() => {
+            setShowInvoice(false);
+            setShowRequestForm(false);
+            setSelectedEquipment([]);
+            setRequestForm({
+              name: "",
+              email: "",
+              branch: "",
+              year: "",
+              rollNo: "",
+              phone: "",
+              purpose: "",
+              timeline: ""
+            });
+          }}
+        />
+      )}
     </div>
   );
 }

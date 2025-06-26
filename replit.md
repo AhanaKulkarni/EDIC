@@ -48,7 +48,8 @@ The application defines four main entities:
 - **Team**: Core team and faculty coordinator profiles
 - **Events**: Upcoming and past events showcase
 - **Startups**: Student startup portfolio display
-- **Student Corner**: Resources, idea submission, and mentorship requests
+- **Lab Resources**: Comprehensive laboratory equipment directory with 17+ labs
+- **Student Corner**: Resources, idea submission, mentorship requests, and equipment requests
 - **Register**: EDIC membership registration form
 - **Contact**: Contact information and communication channels
 
@@ -103,6 +104,7 @@ The application defines four main entities:
 
 Changelog:
 - June 26, 2025. Initial setup
+- June 26, 2025. Added comprehensive Lab Resources system with 17+ laboratories covering all engineering departments, equipment directory with detailed descriptions, and invoice generation system with faculty signatures for equipment requests
 
 ## User Preferences
 
