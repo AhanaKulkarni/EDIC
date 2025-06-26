@@ -3,61 +3,107 @@ import { Linkedin } from "lucide-react";
 
 const coreTeam = [
   {
-    name: "Ananya Patel",
-    role: "President",
-    department: "Computer Engineering, Final Year",
-    image: "https://images.unsplash.com/photo-1494790108755-2616b612b786?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=150&h=150&face",
+    name: "Ayush Pardeshi",
+    role: "Chief Executive Officer",
+    department: "Final Year",
     linkedin: "#"
   },
   {
-    name: "Rohan Sharma",
-    role: "Vice President",
-    department: "Electronics Engineering, Final Year",
-    image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=150&h=150&face",
+    name: "Ahana Kulkarni",
+    role: "Chief Technology Officer",
+    department: "Final Year",
     linkedin: "#"
   },
   {
-    name: "Priya Gupta",
+    name: "Bhummi Girnara",
+    role: "Chief Operating Officer",
+    department: "Final Year",
+    linkedin: "#"
+  },
+  {
+    name: "Khushal Satyapal",
+    role: "Chief Marketing Officer",
+    department: "Final Year",
+    linkedin: "#"
+  },
+  {
+    name: "Yash Khatri",
+    role: "Chairperson",
+    department: "Third Year",
+    linkedin: "#"
+  },
+  {
+    name: "Anushka Yadav",
+    role: "Vice-Chairperson",
+    department: "Third Year",
+    linkedin: "#"
+  },
+  {
+    name: "Krish Jain",
+    role: "Outreach Head",
+    department: "First Year",
+    linkedin: "#"
+  },
+  {
+    name: "Raj Mane",
+    role: "Tech Lead",
+    department: "Second Year",
+    linkedin: "#"
+  },
+  {
+    name: "Ansh Singh",
+    role: "Creative Head",
+    department: "Second Year",
+    linkedin: "#"
+  },
+  {
+    name: "Rashi Bedse",
+    role: "Social Media Manager",
+    department: "Second Year",
+    linkedin: "#"
+  },
+  {
+    name: "Sayyam Lohade",
     role: "Secretary",
-    department: "Information Technology, Third Year",
-    image: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=150&h=150&face",
+    department: "Second Year",
     linkedin: "#"
   },
   {
-    name: "Arjun Singh",
-    role: "Treasurer",
-    department: "Mechanical Engineering, Third Year",
-    image: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=150&h=150&face",
+    name: "Nidhi Dilipkumar Shukla",
+    role: "Event Manager",
+    department: "Second Year",
     linkedin: "#"
   },
   {
-    name: "Kavya Reddy",
-    role: "Marketing Head",
-    department: "Computer Engineering, Second Year",
-    image: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=150&h=150&face",
+    name: "Tanvi Prakash Jabare",
+    role: "Publication Head",
+    department: "Second Year",
     linkedin: "#"
   },
   {
-    name: "Vikram Joshi",
-    role: "Events Coordinator",
-    department: "Electronics Engineering, Second Year",
-    image: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=150&h=150&face",
+    name: "Hredey Chaand",
+    role: "PR Head",
+    department: "Second Year",
+    linkedin: "#"
+  },
+  {
+    name: "Yash Yadav",
+    role: "Sponsorship Head",
+    department: "Second Year",
     linkedin: "#"
   }
 ];
 
 const facultyCoordinators = [
   {
-    name: "Prof. Amit Desai",
-    role: "Faculty Coordinator",
-    department: "Department of Computer Engineering",
-    image: "https://images.unsplash.com/photo-1560250097-0b93528c311a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=100&h=100&face"
+    name: "Sukruti Kaulgud",
+    role: "Faculty Head, EDIC",
+    department: "Department of Computer Engineering"
   },
   {
-    name: "Dr. Sneha Patil",
-    role: "Faculty Coordinator",
-    department: "Department of Electronics Engineering",
-    image: "https://images.unsplash.com/photo-1580489944761-15a19d654956?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=100&h=100&face"
+    name: "Dr. Vinitkumar Dongre",
+    role: "Dean R&D",
+    department: "TCET"
   }
 ];
 
@@ -130,11 +176,6 @@ export default function Team() {
                 viewport={{ once: true }}
                 className="bg-white dark:bg-gray-900 rounded-xl shadow-lg p-6 text-center card-hover border border-gray-200 dark:border-gray-700"
               >
-                <img
-                  src={member.image}
-                  alt={member.name}
-                  className="w-24 h-24 rounded-full mx-auto mb-4 object-cover"
-                />
                 <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-2">
                   {member.name}
                 </h3>

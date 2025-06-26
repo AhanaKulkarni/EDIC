@@ -84,7 +84,7 @@ export default function About() {
               <div className="text-gray-600 dark:text-gray-300 mt-2">Students Mentored</div>
             </div>
             <div className="text-center p-6 gradient-card rounded-xl">
-              <div className="text-3xl font-bold text-primary">50+</div>
+              <div className="text-3xl font-bold text-primary">25+</div>
               <div className="text-gray-600 dark:text-gray-300 mt-2">Events Organized</div>
             </div>
           </motion.div>
@@ -101,9 +101,15 @@ export default function About() {
             viewport={{ once: true }}
             className="gradient-card rounded-2xl p-8 mb-16"
           >
-            <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-6">Our Story</h3>
+            <h3 className="text-2xl font-bold gradient-text-secondary mb-6">Our Story</h3>
+            <p className="text-gray-600 dark:text-gray-300 text-lg leading-relaxed mb-4">
+              The Innovation and Entrepreneurship Cell at TCET acts as a dynamic launchpad for student entrepreneurs, fostering a vibrant ecosystem through diverse, impactful activities. Engaging seminars and hands-on workshops equip students with vital skills, from ideation to IP. Our competitions showcase innovation, drawing valuable feedback.
+            </p>
+            <p className="text-gray-600 dark:text-gray-300 text-lg leading-relaxed mb-4">
+              A strong alumni network provides crucial mentorship and guidance. We bridge academia and industry through collaborations, offering real-world exposure. The TCET-EDIC actively connects students with funding opportunities and provides a well-equipped pre-incubation center. This comprehensive support system has led to the remarkable success of 66 registered student startups across various sectors.
+            </p>
             <p className="text-gray-600 dark:text-gray-300 text-lg leading-relaxed">
-              TCET's Entrepreneurship Development and Innovation Cell (EDIC) was established in 2018 with a vision to create a thriving ecosystem of innovation and entrepreneurship within the college. Starting with just a handful of passionate students and dedicated faculty, EDIC has grown into one of the most active entrepreneurship cells in the region, fostering creativity, innovation, and business acumen among students across all disciplines.
+              Many of these ventures have secured seed funding and achieved national recognition, highlighting the effectiveness of our student-centric approach in nurturing future entrepreneurial leaders.
             </p>
           </motion.div>
 
@@ -117,17 +123,10 @@ export default function About() {
               viewport={{ once: true }}
               className="bg-white dark:bg-gray-900 rounded-xl shadow-lg p-8 border border-gray-200 dark:border-gray-700"
             >
-              <div className="flex items-center space-x-4 mb-6">
-                <img
-                  src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=150&h=150&face"
-                  alt="Faculty Head"
-                  className="w-20 h-20 rounded-full object-cover"
-                />
-                <div>
-                  <h4 className="text-xl font-bold text-gray-900 dark:text-white">Dr. Priya Sharma</h4>
-                  <p className="text-primary font-medium">Faculty Head, EDIC</p>
-                  <p className="text-gray-600 dark:text-gray-300 text-sm">Department of Computer Engineering</p>
-                </div>
+              <div className="mb-6">
+                <h4 className="text-xl font-bold text-gray-900 dark:text-white">Sukruti Kaulgud</h4>
+                <p className="text-primary font-medium">Faculty Head, EDIC</p>
+                <p className="text-gray-600 dark:text-gray-300 text-sm">Department of Computer Engineering</p>
               </div>
               <blockquote className="text-gray-600 dark:text-gray-300 italic">
                 "Innovation is not just about technology; it's about solving real-world problems and creating value for society. EDIC provides the perfect platform for our students to explore their entrepreneurial potential."
@@ -142,17 +141,10 @@ export default function About() {
               viewport={{ once: true }}
               className="bg-white dark:bg-gray-900 rounded-xl shadow-lg p-8 border border-gray-200 dark:border-gray-700"
             >
-              <div className="flex items-center space-x-4 mb-6">
-                <img
-                  src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=150&h=150&face"
-                  alt="Dean"
-                  className="w-20 h-20 rounded-full object-cover"
-                />
-                <div>
-                  <h4 className="text-xl font-bold text-gray-900 dark:text-white">Dr. Rajesh Kumar</h4>
-                  <p className="text-primary font-medium">Dean, TCET</p>
-                  <p className="text-gray-600 dark:text-gray-300 text-sm">PhD in Management Studies</p>
-                </div>
+              <div className="mb-6">
+                <h4 className="text-xl font-bold text-gray-900 dark:text-white">Dr. Vinitkumar Dongre</h4>
+                <p className="text-primary font-medium">Dean R&D</p>
+                <p className="text-gray-600 dark:text-gray-300 text-sm">TCET</p>
               </div>
               <blockquote className="text-gray-600 dark:text-gray-300 italic">
                 "EDIC represents our commitment to nurturing entrepreneurial minds. We believe that education should empower students to become job creators, not just job seekers."
