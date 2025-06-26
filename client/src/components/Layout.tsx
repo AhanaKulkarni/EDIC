@@ -27,12 +27,12 @@ export function Layout({ children }: { children: React.ReactNode }) {
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between h-16">
             {/* Logo */}
-            <Link href="/" className="flex items-center space-x-2">
+            <Link href="/" className="flex items-center space-x-2 md:flex-1">
               <div className="text-2xl font-bold text-primary">TCET EDIC</div>
             </Link>
 
-            {/* Desktop Navigation */}
-            <div className="hidden md:flex items-center space-x-8">
+            {/* Desktop Navigation - Centered */}
+            <div className="hidden md:flex items-center justify-center space-x-8 flex-1">
               {navItems.map((item) => (
                 <Link
                   key={item.href}
@@ -44,7 +44,10 @@ export function Layout({ children }: { children: React.ReactNode }) {
                   {item.label}
                 </Link>
               ))}
-              
+            </div>
+
+            {/* Right side buttons */}
+            <div className="hidden md:flex items-center space-x-4 flex-1 justify-end">
               <Button
                 variant="ghost"
                 size="icon"
