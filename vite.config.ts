@@ -16,6 +16,7 @@ const getPlugins = async () => {
 
 export default defineConfig(async () => ({
   plugins: await getPlugins(),
+  root: path.resolve(__dirname, "client"),
   resolve: {
     alias: {
       "@": path.resolve(__dirname, "client", "src"),
@@ -23,9 +24,8 @@ export default defineConfig(async () => ({
       "@assets": path.resolve(__dirname, "attached_assets"),
     },
   },
-  root: path.resolve(__dirname, "client"),
   build: {
-    outDir: path.resolve(__dirname, "dist/public"),
+    outDir: path.resolve(__dirname, "client/dist"), // ✅ Vercel expects this folder
     emptyOutDir: true,
   },
   server: {
