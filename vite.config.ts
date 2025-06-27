@@ -16,20 +16,18 @@ const getPlugins = async () => {
 
 export default defineConfig(async () => ({
   plugins: await getPlugins(),
-  root: path.resolve(__dirname, "client"),
   resolve: {
     alias: {
-      "@": path.resolve(__dirname, "client", "src"),
-      "@shared": path.resolve(__dirname, "shared"),
-      "@assets": path.resolve(__dirname, "attached_assets"),
+      "@": path.resolve(__dirname, "src"),
+      "@shared": path.resolve(__dirname, "..", "shared"),
+      "@assets": path.resolve(__dirname, "..", "attached_assets"),
     },
   },
-  // vite.config.ts
-build: {
-  outDir: path.resolve(__dirname, "client/dist"), // ✅ Correct output
-  emptyOutDir: true,
-},
-
+  root: path.resolve(__dirname),
+  build: {
+    outDir: "dist", // ✅ This is what Vercel expects
+    emptyOutDir: true,
+  },
   server: {
     fs: {
       strict: true,
@@ -37,3 +35,4 @@ build: {
     },
   },
 }));
+
