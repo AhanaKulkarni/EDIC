@@ -24,10 +24,12 @@ export default defineConfig(async () => ({
       "@assets": path.resolve(__dirname, "attached_assets"),
     },
   },
-  build: {
-    outDir: path.resolve(__dirname, "client/dist"), // ✅ Vercel expects this folder
-    emptyOutDir: true,
-  },
+  // vite.config.ts
+build: {
+  outDir: path.resolve(__dirname, "client/dist"), // ✅ Correct output
+  emptyOutDir: true,
+},
+
   server: {
     fs: {
       strict: true,
